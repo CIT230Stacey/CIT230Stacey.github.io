@@ -1,0 +1,61 @@
+body {
+          font-size: 1.0rem;
+          font-family:'short stack' \', sans-serif;
+          line-height: 1.5;
+          color: white;
+          background-color:  rgb(0,0,0);
+          background-attachment: fixed;
+        }
+        
+        header, footer {
+          background-color: red;
+          color: #fff;
+          text-align: center;
+          padding: 0.5rem;
+          margin: auto;
+        }
+                
+        h4, p, img {
+          margin: 1rem;
+        }
+        
+        h3 {
+          margin: 1rem;
+          padding: 1rem 1rem 1rem 1rem;
+          background-color:black;
+          color: #fff;
+          border-radius: 12px 12px 0 0;
+        }
+        
+        section {
+          margin: 1rem;
+          background-color:grey;
+          border-radius:20px;
+        }
+        
+        img {
+          border: 6px solid;
+          border-color: black;
+          width: 90%;
+          height: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        
+        main {
+          display: grid;
+          grid-template-columns: 1fr;
+          padding: 0.5rem; 
+          max-width: 1300px;
+          margin: auto;
+        }
+        
+        #updated {
+          color: rgb(247, 247, 242);
+        }
+        
+        footer a {
+          color: white;
+        }
+        
