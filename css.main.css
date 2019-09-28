@@ -46,7 +46,6 @@ footer {
 header img {
   float: right;
   width: 300px;
-  box-shadow: 5 5 50px rgba(0,0,0,0);
   border-radius: 5px;
 }
 
@@ -57,12 +56,12 @@ header img {
 li {color: white;
 }
 a:any-link {
-          color: #0080ff;
+          color: #3605e8;
                   }
         
         /* WebKit browsers */
         a:-webkit-any-link {
-            color:#0080ff;
+            color:#BDFA52;
         }
 
 footer a {
