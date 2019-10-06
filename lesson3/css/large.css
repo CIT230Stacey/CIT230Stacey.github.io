@@ -1,0 +1,36 @@
+/* media query for large viewports */
+@media only screen and (min-width: 60em) {
+
+          header {
+              border-radius: 15px 15px 0 0;
+              margin: 15px auto;
+          }
+       
+          header img{
+              margin: 5px 10px;
+              display: block;
+              max-width: 128px;
+          }
+          
+          h1 {
+              font-size: 3.5rem;
+           }
+          
+          h2 {
+              font-size: 2.5rem;
+          }
+          
+          h3 {
+              font-size: 2rem;
+          }
+      
+          h4 {
+              font-size: 1.75rem;
+          }
+      
+           footer {
+              border-radius: 0 0 15px 15px;
+              line-height: 1.5em;
+          }
+      
+      }

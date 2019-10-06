@@ -1,0 +1,127 @@
+body {
+          font-family: 'raleway', sans-serif;
+          font-size: 16px;
+          max-width: 1100px;
+          margin: 0 auto;
+          line-height: 1.5;
+      }
+      
+      header,
+      footer {
+          background-color: #18354d;
+          padding: 40px;
+          text-align: center;
+      }
+      
+      
+      header img{
+          margin: 10 auto;
+          max-width: 50px;
+      }
+      
+    
+      h1,
+      h2,
+      h3,
+      h4, 
+     
+      
+      h1 {
+          font-size: 1.75rem;
+          line-height: 1.15;
+      }
+      
+      h2 {
+          font-size: 1.25rem;
+          line-height: .75;
+      }
+      
+      h3 {
+          font-size: 1.1rem;
+      }
+      
+      h4 {
+          font-size: .9rem;
+          font-weight: bold;
+          text-align: center;
+      }
+      
+      nav {
+          background-color:#4978a3;
+          text-align: center;
+          box-shadow: 0 2px 15px white;
+      }
+      
+      nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+      
+      nav ul a {
+          display: block;
+          color:white;
+          text-align: center;
+          padding: .75rem;
+          text-decoration: none;
+          font-size: .95rem;
+          font-weight: bold;
+      }
+      
+      nav a:hover {
+          background-color: orange;
+          color: black;
+      }
+      
+      .active {
+          background-color: black;
+          color: white;
+      }
+      
+      main {
+          background-color:#2f7111;
+          border: 1px solid #CDE8F8;
+          padding: 10px;
+          margin: 10px auto;
+          font-size: .9rem;
+          padding: 0;
+          box-shadow: 0 2px 15px #18354d;
+      }
+      
+      main header {
+          background-color: #18354d;
+          padding: 0;
+          line-height: 1.75; 
+          display: block;
+          box-shadow: 0 2px 15px white;
+          
+      }
+      
+      .container {
+          display:grid;
+          grid-template-columns: 1fr;
+          margin: 0;
+      }
+      
+      main img {
+          display: block;
+          margin: 20px auto;
+          box-shadow: 0 2px 15px white;
+      }
+      
+      
+      main article {
+          display: block;
+          max-width: 100%;
+          padding: 10px;
+      }
+      
+      main article h4 {
+          text-align: center;
+      }
+      
+      footer {
+          font-size: .75rem;
+          color:white;
+      }
