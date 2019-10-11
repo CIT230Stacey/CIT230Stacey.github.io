@@ -121,7 +121,13 @@ body {
       main article h3 {
           text-align: center;
       }
-      
+      .contentbox {
+        text-align: center;
+        border: 1px solid #18354d;
+        background-color:#4978a3;
+        padding: .5rem;
+        margin-top: .5rem;
+    }
       footer {
           font-size: .75rem;
           color:white;
