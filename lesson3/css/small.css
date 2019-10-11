@@ -115,9 +115,10 @@ body {
           display: block;
           max-width: 100%;
           padding: 10px;
+          text-align: center;
       }
       
-      main article h4 {
+      main article h3 {
           text-align: center;
       }
       
