@@ -1,3 +1,2 @@
 function toggleMenu() {
-         document.getElementsByClassName("Nav").classList.toggle("hide");
-      }
+         document.getElementsByClassName("Nav").classList.toggle("hide")}
