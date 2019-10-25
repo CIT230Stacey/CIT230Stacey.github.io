@@ -11,6 +11,8 @@
 
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=sans-serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=san-serif|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="css/normalize5.css" rel="stylesheet">
     <link href="css/small5.css" rel="stylesheet">
     <link href="css/medium5.css" rel="stylesheet">
@@ -18,8 +20,10 @@
     
 </head>
 <body>
-    <div id="bannerad">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavillion</div>
-    <div id="content"></div>
+    <body onload='showBannerad()'>
+        <div id="bannerad">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+   
+    <div id="content">
    <header>
         <picture>
               <img src="images/npposter.jpeg" alt= "napolean dynamite">
@@ -98,28 +102,26 @@
                         <p> The "Napoleon Dynamite Festival" is held every summer in Preston.  </p>
                     </div>
                         
-                     </main>
+                     
          
-                    <div class="contact">
-                                                                     
+                    <div class="contactbox">
+                        <img class="contact-image">
+                            <img scr="im/pinpreston.jpeg" alt="Preston Map">
+                    </div>                                       
                                     <div class="address">
-                                              <p>Napoleans Weather Site</p>
+                                              <strong>Napoleans Weather Site</strong>
                                               <p>100 South Dynamite Street</p>
                                               <p>Preston, Idaho  83263</p>
                                     </div>
-                                   <div class="info">
-                                    <br>
+                                     <div class="info">
+                                         <br>
                                         &#9742;  (587)257-7262<br>
                                         &#9993;  napoleansweather.com<br>
                                         
-                  <a class="sm" target="_blank" href="https://www.youtube.com"><img src="images/ytube.jpg" alt="youtube"></a>
-                  <a class="sm" target="_blank" href="https://www.facebook.com"><img src="images/facebook.jpg" alt="facebook"></a>
-                  <a class="sm" target="_blank" href="https://www.instagram.com"><img src="images/instagram.jpg" alt="instagram"></a>
-                  <a class="sm" target="_blank" href="https://www.twitter.com"><img src="images/twitter.jpg" alt="twitter"></a>
-                  <a class="sm" target="_blank" href="https://www.pinterest.com"><img src="images/pinterest.jpg" alt="pinterest"></a>
-                         </div>
+</div>
 
- 
+</main>
+</div>
 <footer>       
      <div>
 <p class="footertext"> &copy; <span id="year"> </span>  |   Weather Site  |  Stacey Atwood   | <br>
@@ -127,8 +129,14 @@
 </div>                   
 </footer>
           <script src="js/currentdate.js"></script>
+          <script src="js/webfonts.js"></script>   
+          <script src="js/showbanner.js"></script>     
           <script src="js/date.js"></script>
           <script src="js/toggle.js"></script>
 </body>
 
 </html>
+
+
+
+
