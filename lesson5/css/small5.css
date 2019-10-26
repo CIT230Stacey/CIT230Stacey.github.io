@@ -16,10 +16,7 @@ body {
         padding: 0.9rem;
       }
       
-      .hidebanner {
-        display: none;
-      }
-      header {
+       header {
           background-color: #81BEF7;
           padding: 40px;
           display:flex;
@@ -31,7 +28,7 @@ body {
       }
       
       header img{
-        width: 80px;
+        width: 120px;
         height: auto;
         border: 1px solid #000; 
         box-shadow: 5px 5px 5px black;
@@ -145,33 +142,21 @@ body {
       }
 
       #bannerad {
-        width: 100vw;
-        margin: 0 auto;
-        display: flex;
-        visibility: hidden;
+        width: 63vw;
+        margin: auto;
+        display: block;
+        visibility: visible;
         justify-content: center; 
         border: 1px solid #000; 
-        padding: .8rem;
+        padding: 0;
         background-color: rgba(255, 20, 145, 0.4);
         color: black;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: bold;
         position: fixed;
     }
     
-      .contentbox {
-        display:block;
-        max-width:100rem;
-        height: auto;
-        margin: auto;
-        text-align: center;
-        border: 1px solid black;
-        background-color:#FFC308;
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 1rem;
-        margin-top: .5rem;
-    }
+  
  
 #toggle {
     position: absolute;
@@ -229,8 +214,7 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
-    line-height: auto;
-      }
+         }
 
 .weatherinfo {
     display: inline-grid;
@@ -242,8 +226,7 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
-    line-height: auto;
-           }
+               }
 
 .c1 {
 	text-align: right;
@@ -277,25 +260,30 @@ body {
     float: right;
     box-shadow: 5px 5px 5px black;
 }
-.contactbox  {
-  display: grid;
-  grid-template-columns: 5fr 5fr 5fr;
-  max-width: 60rem;
+
+.contentbox {
+  display:flex;
+  max-width: width 1px;
   height: auto;
-  margin: 10px auto;
-  padding: 15rem;
-  background-color: #FFC308;
-  border: 1px solid #000; 
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.8rem;
-  color: black;
+  margin: auto;
+  text-align: right;
+  border: 5px solid black;
+  background-color:#FFC308;
   font-size: 1rem;
   font-weight: bold;
-}
-.contactimg {
-  display: none;
+  padding: 5rem;
+  margin-top: .5rem;
 }
 
+
+.contactimg {
+  width: 5px;
+  height: auto;
+  border: 1px solid #000; 
+  box-shadow: 5px 5px 5px black;
+      }
+
+     
 address {
   width: 13rem;
   height: auto;
@@ -308,21 +296,14 @@ address {
   padding: 1rem .5rem 0rem 2rem;
 }
 
-.sm {
-  width: 2rem;
-  height: auto;
-  justify-content: left;
-  padding: .2rem .2rem .2rem 0rem;
-}
-
 .pin {
-  width: .7rem;
+  width: 3rem;
   height: auto;
-  background-color: transparent;
+  background-color: black;
 }
 
 .map {
-  display: none;
+  display: block;
 }
 
       main {
@@ -330,34 +311,40 @@ address {
           border:5px solid black;
           padding: 5px;
           margin: 10px auto;
-          font-size: .9rem;
+          font-size: 2rem;
           text-align: center;
-          box-shadow: 0 5px 15px white;
+          box-shadow: 5px 5px 5px black;
       }
       
       main header {
         background-color:#992600;
-          padding: 0;
-          line-height: 1.75; 
-          text-align: center;
-          box-shadow: 0 2px 5px #FFC308;
+        padding: 5px;
+        line-height: 1.75; 
+        text-align: center;
+        box-shadow: 2px 2px 5px #FFC308;
           
       }
-                
-      main img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 100%;
-        }
-            
       main article {
-          display: block;
-          text-align: center;
-          max-width: 50%;
-          padding: 10px;
-      }
-      
+        position: relative;
+        margin: 10px auto;
+        top: 3rem;
+        left: 2rem;
+        width: 20rem;
+        height: auto;
+        background-color:#81BEF7;
+        padding: 1rem;
+        box-shadow: 5px 5px 5px black;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+    }
+
+      main img {
+        float: right;
+         width: 28.5%;
+         height:auto;
+        box-shadow: 5px 5px 5px black;
+         }
+          
         
         #info {
           border: 1px solid #000; 
@@ -393,6 +380,4 @@ address {
         .date {
             color: white;
         }
-
-
 
