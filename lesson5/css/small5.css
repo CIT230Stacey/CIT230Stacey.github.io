@@ -140,25 +140,8 @@ body {
           background-color: black;
           color: white;
       }
-
-      #bannerad {
-        width: 63vw;
-        margin: auto;
-        display: block;
-        visibility: visible;
-        justify-content: center; 
-        border: 1px solid #000; 
-        padding: 0;
-        background-color: rgba(255, 20, 145, 0.4);
-        color: black;
-        font-size: 1rem;
-        font-weight: bold;
-        position: fixed;
-    }
-    
-  
- 
-#toggle {
+      
+  #toggle {
     position: absolute;
     left: -100%;
     top: -100%;
@@ -170,14 +153,12 @@ body {
     transform: translate(50px, 50px);
   }
   #toggle:checked ~ .nav .nav-item {
-    color: #EC7263;
+    color: red;
     letter-spacing: 0;
     height: 40px;
     line-height: 40px;
     margin-top: 0;
-    opacity: 1;
-    transform: scaleY(1);
-    transition: 0.5s, copacity 0.1s;
+    
   }
   .herodiv {
     position: relative;
@@ -263,7 +244,7 @@ body {
 
 .contentbox {
   display:flex;
-  max-width: width 1px;
+  width: 1px;
   height: auto;
   margin: auto;
   text-align: right;
