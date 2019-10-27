@@ -1,7 +1,11 @@
-WebFont.load({
-          google: {
-            families: [
-               'fontfamilynameofyourchoice'
-            ]
-          }
-        });
+newFunction();
+
+function newFunction() {
+  WebFont.load({
+    google: {
+      families: [
+        'fontfamilynameofyourchoice'
+      ]
+    }
+  });
+}
