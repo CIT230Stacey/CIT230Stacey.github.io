@@ -148,7 +148,7 @@ body {
   }
   
   #toggle:checked ~ .nav {
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     pointer-events: auto;
     transform: translate(50px, 50px);
   }
