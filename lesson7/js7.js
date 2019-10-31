@@ -1,10 +1,3 @@
-// Return current year in numeric form
-const options = {year:'numeric'};
-document.getElementById('currentyear').textContent = new Date().toLocaleDateString('en-US', options);
-
-// Return the date and time on which the document was last modified
-document.getElementById('lastupdated').textContent = document.lastModified;
-
 // ***"Lazy Load" progressive image loading technique using IntersectionObserver()
 // get all imgs with data-src attribute
 let imagesToLoad = document.querySelectorAll("img[data-src]");
