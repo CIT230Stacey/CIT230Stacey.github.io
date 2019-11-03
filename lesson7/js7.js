@@ -1,28 +1,38 @@
-// Set up an intersection observer with some options
-var observer = new IntersectionObserver(lazyLoad, {
 
-  // where in relation to the edge of the viewport, we are observing
-  rootMargin: "100px",
+//get all imgs with data src attribute
+const imagesToLoad = document.querySelectorAll("img[data-src]");
 
-  // how much of the element needs to have intersected 
-  // in order to fire our loading function
-  threshold: 1.0
-
-});
-function lazyLoad(elements) {
-  elements.forEach(image => {
-    if (image.intersectionRatio > 0) {
-
-      // set the src attribute to trigger a load
-      image.src = image.dataset.src;
-
-      // stop observing this element. Our work here is done!
-      observer.unobserve(item.target);
-    };
-  });
+//optional parameters being set for the IntersectionalObserver
+const imgOptions = {
+    threshold:0,
+    rootMargin: "0px 0px -100px 0px"
 };
-// Tell our observer to observe all img elements with a "lazy" class
-var lazyImages = document.querySelectorAll('img.lazy');
-lazyImages.forEach(img => {
-  observer.observe(img);
-});
+
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+        image.removeAttribute('data-src');
+    };
+};
+
+//first check to see if Intersection Observer is supported
+if('IntersectionObserver' in window) {
+    const imgObserver = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            if(item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    }, imgOptions);
+
+    //Loop-through each img and check staus and Load if necessary
+    imagesToLoad.forEach((img) => {
+        imgObserver.observe(img);
+    });
+}
+else {//just load ALL images if not supported..
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
