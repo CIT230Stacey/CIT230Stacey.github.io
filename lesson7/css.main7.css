@@ -1,0 +1,55 @@
+body {
+          font-size: 24px;
+          font-family: 'short stack', sans-serif;
+          line-height: 3;
+          color: white;
+          background-color:  rgb(0,0,0);
+          background-attachment: fixed;
+        }
+        
+        header, main, footer {
+          margin: 1.25rem auto;
+          max-width: 1080px;
+        }
+
+        header, footer {
+          background-color: rgb(255, 0,0);
+          color: #fff;
+          text-align: center;
+          border-radius: 5px;
+        }
+        
+        header {
+          font-size: 24px;
+          height: 100px;
+          line-height: 2;
+        }
+
+        .container {
+          display: grid;
+          border: 5px ;
+          grid-template-columns: auto;
+          justify-items: center;
+          grid-row-gap: 10px;
+      
+      }
+      picture{
+        widows: 100%;
+        overflow: hidden;
+        }
+
+      picture img{
+        width:100%
+      }
+         img[data-src] {
+          filter: blur (1em);
+          }
+                   
+         img {
+              grid-column: 1/1;
+              filter: blur(1.5em);
+              transition: filter 4s;
+          }
+          picture.lazy.img {
+            filter: blur (20px);
+          }

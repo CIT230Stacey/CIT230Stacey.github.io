@@ -1,39 +1,28 @@
-// ***"Lazy Load" progressive image loading technique using IntersectionObserver()
-// get all imgs with data-src attribute
-let imagesToLoad = document.querySelectorAll("img[data-src]");
+// Set up an intersection observer with some options
+var observer = new IntersectionObserver(lazyLoad, {
 
-// set options
-const imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px 50px 0px"
-};
+  // where in relation to the edge of the viewport, we are observing
+  rootMargin: "100px",
 
-const loadImages = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
-  image.onload = () => {
-    image.removeAttribute('data-src');
-  };
-};
+  // how much of the element needs to have intersected 
+  // in order to fire our loading function
+  threshold: 1.0
 
-// check to see if IntersectionObserver() is supported
-if('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((items, observer) => {
-    items.forEach((item) => {
-      if(item.isIntersecting) {
-        loadImages(item.target);
-        observer.unobserve(item.target);
-      }
-    });
-//  });
-  }, imgOptions); // (from Bro. Blazzard's video)
+});
+function lazyLoad(elements) {
+  elements.forEach(image => {
+    if (image.intersectionRatio > 0) {
 
-  // Loop through each img to check status and load if necessary
-  imagesToLoad.forEach((img) => {
-    observer.observe(img);
+      // set the src attribute to trigger a load
+      image.src = image.dataset.src;
+
+      // stop observing this element. Our work here is done!
+      observer.unobserve(item.target);
+    };
   });
-}
-else { 
-  imagesToLoad.forEach((img) => {
-    loadImages(img);
-  });
-}
+};
+// Tell our observer to observe all img elements with a "lazy" class
+var lazyImages = document.querySelectorAll('img.lazy');
+lazyImages.forEach(img => {
+  observer.observe(img);
+});
