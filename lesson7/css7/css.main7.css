@@ -6,8 +6,8 @@ body {
           }
         
         header, main, footer {
-          margin: 1.25rem auto;
-          max-width: 1080px;
+          margin: 2rem auto;
+          max-width: 1280px;
         }
 
         header, footer {

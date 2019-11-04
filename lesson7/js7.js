@@ -36,3 +36,4 @@ else {//just load ALL images if not supported..
         loadImages(img);
     });
 }
+

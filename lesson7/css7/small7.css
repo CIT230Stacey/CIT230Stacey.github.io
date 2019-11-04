@@ -12,7 +12,7 @@ body {
           color: #fff;
           text-align: center;
           padding: 0.5rem;
-          margin: auto;
+          margin: 1280px;
         }
                 
         h4, p, img {
@@ -59,35 +59,28 @@ body {
         footer a {
           color: white;
         }
-        container {margin: 1rem auto; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
 
-img { width: 250px; height: auto; margin: .5rem;}
-figcaption {font-size: smaller;}
-/* hover effect */
-.norm:hover {box-shadow: 0 0 50px #333;}
-/* rounded corners - boxmodel */
-.rocorn {border-radius: 5px 150px;}
-/* simple opacity */
-.opac {opacity: .5;}
-.blur {filter: blur(1px) grayscale(75%);}
-.object {width: 100%; height: 100px ; object-fit: cover;}
-.shape-outside {border-radius: 100px; width:35%; margin: 0 3em .5em 0; float:left; shape-outside: circle();}
-    
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+        img:hover {
+          box-shadow: 2px 0 0 2px 1px white;
+        }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
