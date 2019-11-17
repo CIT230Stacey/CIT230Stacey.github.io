@@ -1,0 +1,88 @@
+h1{
+          font-size:35px;
+          text-align: center;
+          font-family: 'Nunito', sans-serif;
+          color: white;
+}
+body {
+          font-size:25px;
+          font-family: 'Nunito', sans-serif;
+          color: white;
+          background-color:  rgb(0,0,0);
+          background-attachment: fixed;
+}
+
+        header, footer {
+          background-color: red;
+          color: #fff;
+          text-align: center;
+          padding: 1rem;
+          height: 3rem;
+          }
+
+        header img {
+          margin-left: 86%;
+          margin-top:3px;
+          width:250px;
+          height:300px;
+                      }
+        
+           h2{
+                    margin: 10px;
+                    padding: 1rem 1rem 1rem 1rem;
+                    text-align: center;
+                    background-color:black;
+                    color: #fff;                 
+          }
+          h3{
+                    margin: 10px;
+                    padding: 1rem 1rem 1rem 1rem;
+                    text-align: center;
+                    background-color: rgb(120, 109, 111);
+                    color: #fff;                 
+          }
+                
+main {
+          background-color: rgb(120, 109, 111);
+          color: rgb(184, 182, 175);
+          box-shadow: 2px 2px 5px 10px;
+          padding: 1rem 0.5rem;
+          max-width: 1080px;
+          margin: 0 auto;
+        }
+        
+        .cards {
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 100%;
+          justify-items: center; 
+          align-content: center;
+        }
+        
+        .p{
+          display: grid; 
+          justify-items: center; 
+          width: 97%;
+          margin: 0.25rem;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          background-color: #E5E4D9;
+        }
+        div.cards section {
+          display: grid; 
+          justify-items: center; 
+          width: 97%;
+          margin: 0.25rem;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          background-color: #E5E4D9;
+        }
+        
+img {
+ align-self: center;
+ max-height: 200px;
+ margin: 1rem;
+ border: 1px solid rgba(0, 0, 0, 0.5);
+ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3),
+              -3px -3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
