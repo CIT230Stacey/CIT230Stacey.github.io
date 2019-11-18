@@ -8,13 +8,13 @@ body {
   font-size:25px;
   font-family: 'Nunito', sans-serif;
   color: white;
-  background-color:  rgb(0,0,0);
+  background-color:  black;
   background-attachment: fixed;
 }
 
         header, footer {
           background-color: red;
-          color: #fff;
+          color:white;
           text-align: center;
           padding: 1rem;
           height: 9rem;
@@ -32,19 +32,19 @@ body {
                     padding: 1rem;
                     text-align: center;
                     background-color:black;
-                    color: #fff;                 
+                    color: white;                 
           }
           h3{
                     margin: 10px;
                     padding: 1rem 1rem 1rem 1rem;
                     text-align: center;
                     background-color: grey;
-                    color: #fff;                 
+                    color: white;                 
           }
                 
 main {
-          background-color: rgb(120, 109, 111);
-          color: rgb(184, 182, 175);
+          background-color: grey;
+          color: light white;
           box-shadow: 2px 2px 5px 10px;
           padding: 1rem 0.5rem;
           max-width: 1080px;
@@ -70,9 +70,9 @@ main {
         }
 
         .section{
-          background-color: #B9B9CC;
+          background-color: grey;
           align-content: center;
-          border: 1px solid #4D4D96;
+          border: 1px solid  white;
         }
         div.cards section {
           display: grid; 
@@ -87,9 +87,7 @@ img {
  align-self: center;
  max-height: 200px;
  margin: 1rem;
- border: 1px solid rgba(0, 0, 0, 0.5);
- box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3),
-              -3px -3px 10px rgba(0, 0, 0, 0.3);
+ border: 1px solid black;
+ box-shadow: 3px 3px 10px black;
 }
-
 
