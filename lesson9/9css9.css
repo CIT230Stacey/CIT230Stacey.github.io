@@ -5,11 +5,11 @@ h1{
           color: white;
 }
 body {
-          font-size:25px;
-          font-family: 'Nunito', sans-serif;
-          color: white;
-          background-color:  rgb(0,0,0);
-          background-attachment: fixed;
+  font-size:25px;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background-color:  rgb(0,0,0);
+  background-attachment: fixed;
 }
 
         header, footer {
@@ -17,19 +17,19 @@ body {
           color: #fff;
           text-align: center;
           padding: 1rem;
-          height: 3rem;
+          height: 9rem;
           }
 
         header img {
-          margin-left: 86%;
-          margin-top:3px;
-          width:250px;
+          margin-left: 83%;
+          margin-top:-110px;
+          width:290px;
           height:300px;
                       }
         
            h2{
                     margin: 10px;
-                    padding: 1rem 1rem 1rem 1rem;
+                    padding: 1rem;
                     text-align: center;
                     background-color:black;
                     color: #fff;                 
@@ -38,7 +38,7 @@ body {
                     margin: 10px;
                     padding: 1rem 1rem 1rem 1rem;
                     text-align: center;
-                    background-color: rgb(120, 109, 111);
+                    background-color: grey;
                     color: #fff;                 
           }
                 
@@ -54,7 +54,7 @@ main {
         .cards {
           margin: 0 auto;
           display: grid;
-          grid-template-columns: 100%;
+          grid-template-columns: 1fr;
           justify-items: center; 
           align-content: center;
         }
@@ -62,16 +62,23 @@ main {
         .p{
           display: grid; 
           justify-items: center; 
+          text-align: center;
           width: 97%;
           margin: 0.25rem;
           border: 1px solid rgba(0, 0, 0, 0.3);
           background-color: #E5E4D9;
         }
+
+        .section{
+          background-color: #B9B9CC;
+          align-content: center;
+          border: 1px solid #4D4D96;
+        }
         div.cards section {
           display: grid; 
           justify-items: center; 
-          width: 97%;
-          margin: 0.25rem;
+          width: 85%;
+          margin: .55rem;
           border: 1px solid rgba(0, 0, 0, 0.3);
           background-color: #E5E4D9;
         }

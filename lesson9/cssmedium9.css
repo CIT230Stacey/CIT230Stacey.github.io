@@ -1,6 +1,23 @@
-@media only screen and (min-width: 37.5em) {
-      main {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-            
+@media only screen and (min-width: 45em) {
+  div.cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+  
+}
+
