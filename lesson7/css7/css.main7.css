@@ -30,10 +30,10 @@ body {
           justify-items: center;
           grid-row-gap: 8em;
         }
-       picture img[data-src] {
-          filter: blur(1em);
+        img[data-src] {
+          filter: blur(.5em);
         }
-        picture img{
+       img{
           filter: blur(1em);
-          transition: 5s;
+          transition: 2s;
               }
