@@ -4,7 +4,7 @@ weekdays = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Sa
 
 var weekday = weekdays[d.getDay()]
 
-if (weekday == "friday") {
+if (weekday == "Friday") {
         document.getElementById("banner").style.visibility = "visible";
     }
 else{
