@@ -10,13 +10,13 @@
         content="Napolean Dynamite Weather Page | Stacey Atwood  | CIT230">
 
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=sans-serif" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=san-serifOpen+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link href="css6/cleannormalize6.css" rel="stylesheet">
-    <link href="css6/cleansmall6.css" rel="stylesheet">
-    <link href="css6/cleanmedium6.css" rel="stylesheet">
-    <link href="css6/cleanlarge6.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="css6/small6.css" rel="stylesheet">
+    <link href="css/medium6.css" rel="stylesheet">
+    <link href="css/large6.css" rel="stylesheet">
+    <link href="css6/normalize6.css" rel="stylesheet">
     
 </head>
 <body>
@@ -27,17 +27,17 @@
         <picture>
               <img src="images6/npposter.jpeg" alt= "napolean dynamite">
         </picture>
-          <section class="headings"></section>
+          <section class="headings">
                     <h1>Napoleans Weather</h1>
                     <div class="motto">Weather for Preston, Idaho Home of Napolean Dynamite</div>
-                    iv>
-              </header>
+          </section>
+    </header>
 
     <nav>
         <ul class="navigation">
         <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="preston-6.html" class="active">Preston</a></li>
+        <li><a href="preston-5.html" class="active">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
@@ -46,15 +46,12 @@
      </nav>
 <br>
 <main>
-     <br>       
-           <h2 class="subhead">Napoleans Weather </h2>
+            
+           <h2 class="subhead">Napleans Weather</h2>
           <div class="herodiv">
-         <figure class="hero">
-             <img src="images6/large.jpg" alt="image 6 large" size="100vw"   srcset="images6/large.jpg 1080w,  images6/medium.jpg 895w, images6/small.jpg 575w" sizes="100vw">
-        </figure>  
-    </div>     
-        <section id="summary"></section>
-                            <div class="weathersummary"> 
+                <img class="hero-ph" src="images6/nphome.jpeg" alt="Np home">
+                               
+                        <div class="weathersummary"> 
                             <div class="weathertitle">Weather Summary</div>
                             <div class="weatherinfo">
                                 <div class="c1">
@@ -75,7 +72,7 @@
                         </div>
                     </div>
         
-       <section id="fiveday forcast"></section>
+       
         <div class="forecastdiv">
                 <h2 class="forecastheading">5 Day Forecast</h2>
             <table id="forecasttable">
@@ -86,29 +83,19 @@
                   <th>Thurs</th>
                   <th>Fri</th>
                 </tr>
-                <tr>
-                </tr>
             </table>
             </div>
-        <section id="article"></section>
+        
               
                     <div class="article">
                         <img class="articleimg" src="images6/nphero.jpeg" alt="np">
-                       </div>
+                        <p>Preston Idaho is home of the Great Napolean Dynamite!</p> 
+                        <br>
+                        <p> The "Napoleon Dynamite Festival" is held every summer in Preston.  </p>
+                    </div>
                         
                      
-
-
-
-
-
-
-
-
-
-
-
-    <section id="contactinfo"></section>
+         
             <div class="contactbox"></div>
                 <div class="contact-image"></div>
                                 <img src="images6/pinpreston.jpeg" alt="Preston Map">           
@@ -124,28 +111,21 @@
                                         &#9993;  napoleansweather.com<br>
                                     </div>
   </main>
- 
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script>
-          WebFont.load({google: {families: ['fontfamilynameofyourchoice']} }); </script>
+  <footer>  
 
-<script src="js6/webfontload.js"></script>
-
-  </body>
-          <footer>       
-          <div>
-     <p class="footertext"> &copy; <span id="year"> </span>  |   Weather Site  |  Stacey Atwood   | <br>
-     <span id="currentdate"> </span> </p>
-     </div>                   
-         </footer>
-               <script src="js6/windchill.js"></script>
-               <script src="js6/currentdate.js"></script>
-               <script src="js6/webfontload.js"></script>   
-               <script src="js6/banner.js"></script>     
-               <script src="js6/date.js"></script>
-               <script src="js6/toggle.js"></script>
-             
-     </html>
+         
+     <div>
+<p class="footertext"> &copy; <span id="year"> </span>  |   Weather Site  |  Stacey Atwood   | <br>
+<span id="currentdate"> </span> </p>
+</div>                   
+    </footer>
+          <script src="js/currentdate.js"></script>
+          <script src="js/webfonts.js"></script>   
+          <script src="js/banner.js"></script>     
+          <script src="js/date.js"></script>
+          <script src="js/toggle.js"></script>
+        </body>
+</html>
 
 
 

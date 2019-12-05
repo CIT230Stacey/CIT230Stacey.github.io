@@ -1,6 +1,6 @@
 body {
           font-size: 1.0rem;
-          font-family:'short stack' \', sans-serif;
+          font-family:'raleway, san serif';
           line-height: 1.5;
           color: white;
           background-color:  black;
@@ -61,7 +61,7 @@ body {
         }
 
         img:hover {
-          box-shadow: 2px 0 0 2px 1px white;
+           color:white;
         }
 
         .column {
