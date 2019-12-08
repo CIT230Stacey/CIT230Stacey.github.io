@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stormcenter.css">
+
+  
+  <title>Stormcenter</title>
+  </head>
+
+<body>
+
+  <header>
+       </header>
+  
+  <main> 
+      <h2>Report a Storm</h2>
+        
+      <p style="text-align: center"> Submit a STORM <strong>If it's BAD, Call <bold style="color:red";>9-1-1</bold>. Thank you.</strong></p>
+        
+        
+        <form name="stormreportform" action="thanks.html" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label><span>Full Name:</span><input type="text" name="fullname" pattern="[a-zA-Z -]{5,}" required></label>
+                <label><span>Email:</span><input type="email" name="email" placeholder="example@email.com" required></label>
+                <label><span>Phone Number:</span><input type="tel" name="phone" required></label>
+                <label><span>Zip Code:</span><input type="number" name="zipcode" pattern="[09]" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Report</legend>
+                <label><span>Storm Date:</span><input type="date" name="date" required></label>
+                <label><span>Storm Type:</span><input list="stormtype" name="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label><span>Storm Severity: on a scale of 1 to 10 (10 being the worst)</span>
+                    <input type=range name="severity" min="1" max="10" step="1" value="5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span><br>
+                </label>
+                <label><span>Storm Region:</span>
+                    <select name="select region">
+                        <option value="default" selected disabled hidden>Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+                <label><span>Are you in DANGER?</span>
+                     <input type="radio" name="danger" class="inputradio" value="Yes">Yes
+                    <input type="radio" name="danger" class="inputradio" value="Maybe">Maybe
+                    <input type="radio" name="danger" class="inputradio" value="No">No
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Just the Facts...</legend>
+                <label>Helpful Info</label><br>
+                <textarea name="comments" rows="15" cols="50"></textarea>        
+            </fieldset>
+            
+            <input type="submit" value="Submit" class="formbutton" formaction="thanks.html">
+            <input type="reset" value="Reset" class="formbutton">
+        </form>
+  </main>
+    
+  <footer>
+        </footer>
+    
+        <script>
+          function adjustRating(rating) {
+              document.getElementById("ratingvalue").innerHTML = rating;
+          }
+      </script>
+</body>
+</html>

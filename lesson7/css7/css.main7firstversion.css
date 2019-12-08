@@ -89,11 +89,3 @@ picture img{
   filter: blur(1em);
   transition: 5s;
       }
-
-      img[data-src] {
-        filter: blur(.2em);
-      }
-     img{
-        filter: blur(0em);
-        transition: filter .05s;
-          }
