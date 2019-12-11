@@ -1,0 +1,9 @@
+header, main, footer{
+          background-color: black;
+          color: white;
+}
+
+heading {
+  text-align: center;
+  color: red;
+}
