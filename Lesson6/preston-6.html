@@ -13,78 +13,26 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="css6/normalize6.css" rel="stylesheet">
     <link href="css6/small6.css" rel="stylesheet">
     <link href="css6/medium6.css" rel="stylesheet">
-    <link href="css6/large6.css" rel="stylesheet">
-    <link href="css6/normalize6.css" rel="stylesheet">
-    
+    <link href="css6/large6.css" rel="stylesheet">  
+
 </head>
 <body>
-    
-    <div class="box">
-        <picture class="logo">
-            <h2 class="subhead">Napleans Weather</h2>
-            <div class="herodiv">
-                  <img class="hero-ph" src="images6/largefranklin.jpg" alt="Lesson-6 photo">
-                  <picture>
-                      <source media="(min-width:1000px)" srcset="images6/largefranklin.jpg">
-                      <source media="(min-width:800px)" srcset="images6/mediumfranklin.jpg">
-                      <source media="(min-width:600px)" srcset="images6/small.jpg"> </picture>
-        </picture>
-    </div>
-    <div class="summary">
-        <ul> <li>Current:   
-            <span class="currentweather">Snow</span> 
-            </li>
-            <li>Temperature: <span id="temp">20</span>F   </li>
-            <li>Humidity:  <span class="currentweather">6%</span> </li>
-            <li>Precipitation  <span class="currentweather">6 inches</span> </li>
-            <li>Wind Speed <span id="wind">30</span> miles/hr</li>
-            <li>Wind Chill: <span id="chill"></span>F</li>
-        </ul>
-    </div>
-    <section class="sect">
-        <div>
-            <h5>Friday</h5>
-            <img src="images/sunny.png" class="5day" alt="sunny">
-            <p>60 &#x2109;</p>
-        </div>
-        <div>
-                <h5>Friday</h5>
-                <img src="images/partlycloudy.jpg" class="5day" alt="partly cloudy">
-                <p>60 &#x2109;</p>
-        </div>
-        <div>
-                <h5>Friday</h5>
-                <img src="images/cloudy.png" class="5day" alt="cloudy"><br/>
-                <p>60 &#x2109;</p>
-        </div>
-        <div>
-                <h5>Friday</h5>
-                <img src="images/partlycloudy.jpg" class="5day" alt="cloudy">
-                <p>60 &#x2109;</p>
-        </div>
-        <div>
-                <h5>Friday</h5>
-                <img src="images/sunny.png" class="5day" alt="sunny">
-                <p>60 &#x2109;</p>
-        </div>
-
-
-    </section> 
-
-        </ul>
-    </div>
-   <header>
-        
-
-          <section class="headings">
-                    <h1>Napoleans Weather</h1>
-                    <div class="motto">Weather for Preston, Idaho Home of Napolean Dynamite</div>
+    <body onload="loadDate()">
+        <h1 id="pancake">Preston Pancakes Saturday 9:00am in the PARK</h1>
+     
+</body>
+<header>
+   <section>
+      <picture><img class="logo" src="images6/npposter.jpeg" alt="Napolean Weather Logo"></picture>
+               <h1>Dynamite Weather</h1>
           </section>
-    </header>
-
-    <nav>
+</header>
+         <nav>
+           <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
         <ul class="navigation">
         <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a href="index.html">Home</a></li>
@@ -95,54 +43,52 @@
         <li><a href="#">Gallery</a></li>
         </ul>
      </nav>
-<br>
-<main>    
-           <h2 class="subhead">Napleans Weather</h2>
-          <div class="herodiv">
-                <img class="hero-ph" src="images6/largefranklin.jpg" alt="Lesson-6 photo">
-                <picture>
-                    <source media="(min-width:1000px)" srcset="images6/largefranklin.jpg">
-                    <source media="(min-width:800px)" srcset="images6/mediumfranklin.jpg">
-                    <source media="(min-width:600px)" srcset="images6/small.jpg"> </picture>
-                               
-                        <div class="weathersummary"> 
-                            <div class="weathertitle">Weather Summary</div>
-                            <div class="weatherinfo">
-                                <div class="c1">
-                                    Currently:<br>
-                                    Temperature:<br>
-                                    Humidity:<br>
-                                    Precipitation:<br>
-                                    Wind Speed:<br>
-                                </div>
-                                <div class="c2">
-                                    Sunny<br>
-                                    76 &#8457;<br>
-                                    69%<br>
-                                    0 inches<br>
-                                    5 mph<br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-       
-        <div class="forecastdiv">
-                <h2 class="forecastheading">5 Day Forecast</h2>
-            <table id="forecasttable">
-                <tr>
-                  <th>Mon</th>
-                  <th>Tues</th>
-                  <th>Wed</th>
-                  <th>Thurs</th>
-                  <th>Fri</th>
-                </tr>
-            </table>
-        </div>
-  </main>
-  <footer>  
 
-         
+<main>      
+     <figure class>
+              <h2> Napleans Weather</h2>
+         <div motto="Everything is Dynamite"></div>
+       <img src="images6/largefranklin.jpg" alt=Franklin sizes="100vw"
+                    srcset="images6/small.jpg 500w,
+                     images6/mediumfranklin.jpg 800w,
+                     images6/largefranklin.jpg 1200w,
+                     images6/largefranklin.jpg 2000w">
+</figure></div>
+<section class="weather-summary">
+    <h3>Weather Summary</h3>
+    <div class="ws-content">
+      <div class="col1">Currently:</div>
+      <div>Rainy</div>
+      <div class="col1">High:</div>
+      <div><span id="currenttemp">48</span>&deg;F</div>
+      <div class="col1">Wind Chill:</div>
+      <div id=windchilllabel><span id="windchill"></span>&deg;F</div>
+      <div class="col1">Humidity:</div>
+      <div>95%</div>
+      <div class="col1">Wind Speed:</div>
+      <div><span id="windspeed">12</span>mph</div>
+    </div>
+  </section>
+</div>
+    <img class="article-img" src="images6/nphero.jpeg" alt="Life is Dynamite">
+                   <h4>Life is Dynamite!</h4>
+                </div>
+
+                            <p>Napoleon Dynamite is a socially awkward 16-year-old from Preston, Idaho, who lives with his grandmother, Carlinda Dynamite, and his older brother, Kipling Ronald "Kip" Dynamite. Kip, 32, is unemployed and boasts of spending hours on Internet chat rooms with his girlfriends and aspiring to be a cage fighter. Napoleon daydreams his way through school, doodling ligers and fantasy creatures and reluctantly deals with the various bullies who torment him, particularly the obnoxious sports jock Don and the school bully Randy. Napoleon likes to make up stories about himself and his outlandish "skills" while having a sullen and aloof personality.<p>
+<br>
+                          <p>Napoleon's grandmother breaks her coccyx in a quad-bike accident and asks their Uncle Rico to look after the boys while she recovers. Rico, a middle-aged and flirtatious steak-loving former athlete who lives in a campervan, treats Napoleon like a child. He uses the visiting opportunity to team up with Kip in a get-rich-quick scheme to sell items door-to-door. Kip wants money to visit his Internet girlfriend LaFawnduh,while Rico believes riches will help him get over his failed dreams of NFL stardom and his recent breakup with his girlfriend.</p>
+                </div>
+                <div class="contractgrid">
+                    <section class="contactgrid">
+                        <picture class="griditem1" id="map"><img src="images6/pinpreston.jpeg" alt="Preston Map"></picture>
+                        <div class="griditem2">
+                          <h2>Contact Information</h2></div>
+                        <div class="griditem3">
+                          <h3>Napoleans Weather
+                          <p>Dynamite Drive</p> 
+                          <p>Preston, ID 83263</p>
+            </section>    
+  <footer>     
      <div>
 <p class="footertext"> &copy; <span id="year"> </span>  |   Weather Site  |  Stacey Atwood   | <br>
 <span id="currentdate"> </span> </p>
