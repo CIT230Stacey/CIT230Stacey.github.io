@@ -178,17 +178,15 @@ position: absolute;
   background-color:#81BEF7;
   padding: 1rem;
   box-shadow: 5px 5px 5px black;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-}
+  font-family: sans-serif;
+  }
 
 */
 .weathertitle {
-  font-size: 25px;
+  font-size: 5px;
   color: black;
   font-family: sans-serif;
-  font-weight: bold;
-  text-align: center;
+   text-align: center;
          }
 
 .weatherinfo {
@@ -199,7 +197,6 @@ position: absolute;
     font-size: 1.25rem;
     color: black;
     font-family: sans-serif;
-    font-weight: bold;
     text-align: center;
                }
 
