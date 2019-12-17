@@ -1,36 +1,51 @@
-/* media query for large viewports */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 65em) {
 
-          header {
-              border-radius: 15px 15px 0 0;
-              margin: 15px auto;
-          }
-       
-          header img{
-              margin: 5px 10px;
-              display: block;
-              max-width: 128px;
-          }
-          
-          h1 {
-              font-size: 3.5rem;
-           }
-          
-          h2 {
-              font-size: 2.5rem;
-          }
-          
-          h3 {
-              font-size: 2rem;
-          }
-      
-          h4 {
-              font-size: 1.75rem;
-          }
-      
-           footer {
-              border-radius: 0 0 15px 15px;
-              line-height: 1.5em;
-          }
-      
+    h1{
+        font-size: 2.75em;
+    }
+    
+    .tagline{
+        font-size: 1.75em;
+    }
+    
+    h2{
+        font-size: 2.25em;
+    }
+    
+    nav ul a{
+        font-size: 1.25em;
+    }
+
+    .navigation li:first-child{
+        display: none;
+    }
+    
+    .navigation li{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .townstats{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+
+    main section {
+        display: block;
       }
+
+    .townstats section div {
+      height: 250px;
+    }
+
+    section img{
+        width: 80%;
+    }
+
+    h5{
+        font-size: 26pt;
+    }
+    #newsarticle p{
+        font-size: 16pt;
+    }
+}

@@ -1,23 +1,40 @@
-@media only screen and (min-width: 45em) {
-  div.cards {
-    grid-template-columns: 1fr 1fr;
-  }
+@media only screen and (min-width: 34em){
 
-  h1 {
-    font-size: 2rem;
-  }
+  .townstats {
+     display: grid;
+     flex-wrap: wrap;
+ }
+ 
+ main section {
+   display: flex;
+     width: 100%;
+     margin: auto;
+     margin-bottom: 20px;
+     padding: 20px 20px;
+ }
+ 
+ section:nth-child(odd) {
+     flex-direction: row-reverse;
+ }
 
-  h2 {
-    font-size: 1.5rem;
-  }
+ section div {
+     margin: auto;
+ }
 
-  p {
-    font-size: 1rem;
-  }
+ section img {
+     width: 40%;
+ }
 
-  main {
-    padding: 1rem;
-  }
-  
-}
+ h5{
+     font-size: 24pt;
+ }
 
+ #newsarticle{
+     display:block;
+ }
+
+ #newsarticle p{
+     font-size: 14pt;
+ }
+
+ }

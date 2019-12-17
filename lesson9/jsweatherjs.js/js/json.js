@@ -1,5 +1,5 @@
 {
-      "towns" : [
+      "towns"  [
       {
         "name": "Franklin",
         "photo": "franklin.jpg",

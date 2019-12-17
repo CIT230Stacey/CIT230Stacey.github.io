@@ -1,3 +1,4 @@
+/* Media Query for medium + screens */
 @media only screen and (min-width: 32.5em) {
 	.navigation {
 		display: flex;
@@ -64,8 +65,3 @@
 		padding-right: 1em;
 
 	 }
-
-	/*section img {
-		text-align: center;
-	}*/
-}
