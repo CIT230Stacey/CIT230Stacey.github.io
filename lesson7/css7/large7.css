@@ -1,0 +1,23 @@
+@media only screen and (min-width: 65em) {
+    nav ul {
+        display: flex;
+        justify-content: space-around
+    }
+    nav ul li a {
+        padding: 2rem   2rem;
+    }
+    .cards {
+    
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        width: auto;
+        height: auto;
+        margin: 10px;
+    }
+    .cards img {
+        width: 50%;
+    }
+    main section {
+        display: block;
+    }
+}

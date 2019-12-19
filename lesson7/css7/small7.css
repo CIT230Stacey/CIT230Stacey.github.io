@@ -1,7 +1,7 @@
 body {
           font-size: 1.0rem;
           font-family:'raleway, san serif';
-          line-height: 1.5;
+          line-height: 1.5px;
           color: white;
           background-color:  black;
           background-attachment: fixed;
@@ -11,14 +11,10 @@ body {
           background-color: red;
           color: white;
           text-align: center;
-          padding: 0.5rem;
-          margin: 1280px;
-        }
-                
-        h4, p, img {
-          margin: 1rem;
-        }
-        
+          padding: 5rem;
+          margin: 10rem;
+        } 
+        /*
         h3 {
           margin: 1rem;
           padding: 1rem 1rem 1rem 1rem;
@@ -27,7 +23,7 @@ body {
           color: white;
           border-radius: 12px 12px 0 0;
         }
-        
+        */
         section {
           margin: 1rem;
           background-color:grey;
@@ -66,7 +62,7 @@ body {
 
         .column {
   float: left;
-  width: 33.33%;
+  width: 40%;
   padding: 5px;
 }
 
@@ -79,7 +75,7 @@ body {
   display: flex;
 }
 .column {
-  flex: 33.33%;
+  flex: 40%;
   padding: 5px;
 }
 picture img[data-src] {
@@ -87,7 +83,7 @@ picture img[data-src] {
 }
 picture img{
   filter: blur(1em);
-  transition: 5s;
+  transition: 2s;
       }
 
       img[data-src] {

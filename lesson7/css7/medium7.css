@@ -1,0 +1,56 @@
+@media only screen and (min-width: 32.5em){
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+  
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px;
+        padding: 1rem 1rem;
+
+    }
+    .primNav {
+        display: flex;
+
+    }
+    .primNav li:first-child {
+        display: none;
+
+    }
+    .primNav li {
+		display: block;
+		flex: 1 1 100%;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        
+       
+    }
+    
+    main section {
+        
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 25px;
+        padding: 25px 25px;
+        
+    }
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    section div {
+        
+        margin: auto;
+    }
+    main img {
+
+    width: 50%;
+    }
+}
