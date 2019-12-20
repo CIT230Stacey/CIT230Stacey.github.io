@@ -46,10 +46,14 @@
      </nav>
 <br>
 <main>  
-           <h2 class="subhead">Napleans Weather</h2>
-          <div class="herodiv">
-                <img class="hero-ph" src="images10/npposter.jpeg" alt="Home ">
-                               
+          <h2>Napleans Weather</h2>
+          <div class="heroDiv">
+      <figure class="hero-image">
+           <img class="hero-ph" src="images10/npposter.jpeg" alt="Home " sizes="60vw" id="hero-image"
+           srcset="images10/npposter.jpeg 500w,
+           images10/npposter-800w,
+           images10/npposter-1100w">
+      </figure>      
                         <div class="weathersummary"> 
                             <div class="weathertitle">Weather Summary</div>
                             <div class="weatherinfo">
@@ -108,43 +112,34 @@
                                       <img src="images10/sodasprings.jpeg" alt="sodasprings.jpg">
                               </section>
                                 </div>
-          <div class="section2">
-                                     <h3>5 Day Forecast</h3>
-                                        <div class="forecast">
-        <div class="sect">
-                  <div>
-          <span id="h5day1">Friday</span> 
-          <img src="https://openweathermap.org/img/w/04d.png" alt="clouds">
-          <p id="pday1">24</p>
-        </div>
-        <div>
-        <span id="h5day2">Saturday</span>
-        <img src="https://openweathermap.org/img/w/04d.png" alt="overcast">
-        <p id="pday2">27</p>
-        </div>
-        <div>
-          <span id="h5day3">Sunday</span>   
-          <img src="https://openweathermap.org/img/w/04d.png" alt="clouds">
-          <p id="pday3">34</p>
-        </div>
-        <div>
-          <span id="h5day4">Monday</span>  
-          <img src="https://openweathermap.org/img/w/13d.png" alt="light snow">
-          <p id="pday4">29</p>
-        </div>
-        <div>
-          <span id="h5day5">Tuesday</span>  
-          <img src="https://openweathermap.org/img/w/04d.png" alt="broken clouds">
-          <p id="pday5">26</p>
-        </div>
-</section>
-                 
-              
+          <section>
+                    <section id="five-day-forecast">
+                    <h3 id="forecast-title">5 Day Forecast</h3>
+                    <div id="forecast-grid">
+                         <div class="forecast-day"><span id="day1fc"></span></div>
+                         <div class="forecast-day"><span id="day2fc"></span></div>                           <div class="forecast-day"><span id="day3fc"></span></div>
+                         <div class="forecast-day"><span id="day4fc"></span></div>
+                         <div class="forecast-day"><span id="day5fc"></span></div>
+                            
+<div class="forecast-icon"><img src="https://openweathermap.org/img/w/04d.png" alt="clouds"></div>
+<div class="forecast-icon"><img src="https://openweathermap.org/img/w/04d.png" alt="clouds"></div>
+<div class="forecast-icon"><img src="https://openweathermap.org/img/w/04d.png" alt="clouds"></div>
+<div class="forecast-icon"><img src="https://openweathermap.org/img/w/04d.png" alt="clouds"></div>
+<div class="forecast-icon"><img src="https://openweathermap.org/img/w/13d.png" alt="light snow"></div>
+                            
+                                 <div class="forecast-temp"><span id="day1temp"></span>&#8457;</div>
+                                 <div class="forecast-temp"><span id="day2temp"></span>&#8457;</div>
+                                 <div class="forecast-temp"><span id="day3temp"></span>&#8457;</div>
+                                 <div class="forecast-temp"><span id="day4temp"></span>&#8457;</div>         <div class="forecast-temp"><span id="day5temp"></span>&#8457;</div>
+                              </div>
+                                    </section>
+                                    
+                                                  
                     <div class="article">
                         <img class="articleimg" src="images10/npbanner.jpeg" alt="np">
                         <p>Preston Idaho is home of the Great Napolean Dynamite!</p> 
                         <br>
-                        <p> The "Napoleon Dynamite Festival" is held every summer in Preston.  </p>
+                        <p> The "Napoleon Dynamite Festival" is held every summer in Preston</p>
                     </div>
                         
                      
@@ -153,7 +148,7 @@
                 <div class="contact-image"></div>
                                 <img src="images10/pinpreston.jpeg" alt="Preston Map">           
                                                            
-                                    <div class="address">
+                                    <div class="info">
                                               <strong>Napoleans Weather Site</strong>
                                               <p>100 South Dynamite Street</p>
                                               <p>Preston, Idaho  83263</p>

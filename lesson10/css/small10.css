@@ -6,7 +6,7 @@
           max-width: 1100px;
           margin: 0 auto;
           text-align: center;
-          line-height: 1.5;
+          line-height: 2px;
       }
       .showbanner {
         display: block;
@@ -109,14 +109,11 @@
         }
       
       .navigation {
-        display: block;
-         background-color:#FFC308;
-         text-align: center;
-         padding: 1rem;
-         border: 5px solid #000; 
-         text-decoration: flex 1 1 auto;
+        background-color:#FFC308;
+        text-align: center;
+        box-shadow: 0 2px 15px white;
+        border: 3px solid black;
       }
-          
       .navigation ul {
           list-style: none;
           margin: 0;
@@ -138,7 +135,13 @@
           background-color:#992600;
           color:#4978a3;
       }
-      
+     
+    
+    nav a:hover {
+        background-color:#992600;
+        color:#4978a3;
+    }
+    
       .active {
           background-color: black;
           color: white;
@@ -229,62 +232,67 @@
 .sect{
   display: none;
 }
-/*
-.sec2 {
+
+/*5 day forecast*/
+#five-day-forcast {
   display: none;
-  background-color: yellowgreen;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1em;
 }
 
-.sec2 h3 {
-  font-size: 1.25em;
+#forecast-title {
   text-align: center;
-  margin: -0.5rem 0 0.5rem 0;
-}
-
-.forecast {
-  width: 80%;
+  padding: 2.5em;
+  width: 600px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  background-color: yellowgreen;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-  border-top: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.forecast {
+#forecast-grid {
+  display: grid;
+  width: 600px;
+  margin: 0 auto;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  border: solid;
+}
+
+#forecast-grid {
   display: grid;
   justify-items: center;
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid black;
+  padding: 5rem;
 }
-
-.forecast-image img {
-  width: 80%;
-  padding: 0.75rem;
-}
-
 
 .forecast-day {
+  background-color: yellow;
   font-weight: bold;
-  padding: 0.2rem;
-  color: white;
-  background-color: #003d6a;
-  ;
+  padding: 2rem;
+  border-bottom: 1px solid black;
 }
 
-.forecast-temp {
-  padding-bottom: 0.2rem;
-}
-*/
 .sec3 {
   background-color:#992600;
   padding: 1rem;
 }
+.townsites{
+    margin: 50%;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+}
 
-
+.townInfo{
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+}
 .article {
     display: block;
     max-width: 60rem;
@@ -329,7 +337,7 @@
 
      
 .address {
-  width: 13rem;
+  width: 5rem;
   height: auto;
   justify-content: left;
   font-family: 'Raleway', sans-serif;
@@ -395,7 +403,7 @@
           padding: 1rem;
           background-color: #659DBD; 
           text-align: center;
-          line-height: 1.2rem;
+          line-height: 3.5rem;
           font-family: 'Raleway', sans-serif;
           font-size: 1.5rem;
         }
@@ -408,11 +416,11 @@
             justify-content: center;
             border: 10px solid #000; 
             padding: 4rem;
-            background-color: #659DBD; 
+            background-color: red;
             text-align: center;
-            line-height: 1.2rem;
+            line-height: 5rem;
             font-family: "sans-serif";
-            font-size: 1.5rem;
+            font-size: 5rem;
             text-shadow: 1px 1px 1px #FFC308;
           }
 
