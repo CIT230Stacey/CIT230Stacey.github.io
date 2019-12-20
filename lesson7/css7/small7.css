@@ -1,95 +1,78 @@
 body {
           font-size: 1.0rem;
-          font-family:'raleway, san serif';
+          font-family: 'san serif';
           line-height: 1.5px;
           color: white;
           background-color:  black;
-          background-attachment: fixed;
         }
         
-        header, footer {
+  
+        
+         h2, header, footer {
           background-color: red;
           color: white;
           text-align: center;
           padding: 5rem;
           margin: 10rem;
         } 
-        /*
-        h3 {
-          margin: 1rem;
-          padding: 1rem 1rem 1rem 1rem;
-          text-align: center;
-          background-color:black;
-          color: white;
-          border-radius: 12px 12px 0 0;
-        }
-        */
-        section {
-          margin: 1rem;
-          background-color:grey;
-          border-radius:20px;
-        }
-        
-        img {
-          border: 6px solid;
-          border-color: black;
-          width: 90%;
-          height: auto;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        
-        main {
+        .gridbox {
           display: grid;
-          grid-template-columns: 1fr;
-          padding: 0.5rem; 
-          max-width: 1300px;
+          grid-column: flex 1 1 auto;
+          background-color:black;
+          justify-content: flex 1 1 auto;
+          max-width: auto;
+          gap: .5rem;
+          padding: 1rem;
+          height: auto;
           margin: auto;
-        }
+          border-top: 1px;
+          border-right: 1px;
+          border-left: 1px; 
         
-        #updated {
-          color:yellow;
-        }
-        
-        footer a {
+      }
+      
+    
+      .gallery-title {
+          text-align: center;
+          font-family: 'sans-serif';
+          font-weight: bold;
+          font-size: 5rem;
+          background: red;
+          border-top: 1px;
+          border-bottom: 1px;
           color: white;
-        }
-
-        img:hover {
-           color:white;
-        }
-
-        .column {
-  float: left;
-  width: 40%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.row {
-  display: flex;
-}
-.column {
-  flex: 40%;
-  padding: 5px;
-}
-picture img[data-src] {
-  filter: blur(1em);
-}
-picture img{
-  filter: blur(1em);
-  transition: 2s;
+          text-shadow: 3px 3px 5px black;
+          padding: .5rem;
       }
-
+      
+      figure{
+          display: grid;
+          background-color:black;
+          padding: 1.0rem;
+          margin: auto;
+          display: grid;
+      }
+      
       img[data-src] {
-        filter: blur(.2em);
+          filter: blur(0.2em);
+          width: 100%;
+          height: auto;
       }
-     img{
-        filter: blur(0em);
-        transition: filter .05s;
-          }
+      
+      img {
+           filter: blur(0em);
+          transition: filter 1.5s;
+          width: 100%;
+          height: auto;
+      }
+      
+       figcaption {
+          font-family: 'sans-serif';
+          color: white;
+          text-align: center;
+          font-size: .25rem;
+          font-weight: bold;
+          background:red;
+          padding: .5rem;
+          text-shadow: 3px 3px 5px black;
+       }

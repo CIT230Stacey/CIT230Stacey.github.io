@@ -1,56 +1,49 @@
 @media only screen and (min-width: 32.5em){
-    nav ul {
-        display: flex;
-    }
-    nav ul li {
-        flex: 1 1 100%;
-    }
   
-    
-    nav ul li a {
-        border: none;
-        border-right: 1px;
-        padding: 1rem 1rem;
+	.logo {
+		width: 100%;
+	}
+	.headings h1 {
+		font-size: 2.5rem;
+	}
+	.headings .m {
+		letter-spacing: 1.5pt;
+		font-size: 1.6rem;
+		margin-left: 1rem;
+	}
 
-    }
-    .primNav {
-        display: flex;
-
-    }
-    .primNav li:first-child {
-        display: none;
-
-    }
-    .primNav li {
+	.navigation li:first-child {
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
 		display: block;
 		flex: 1 1 100%;
-    }
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        
-       
-    }
-    
-    main section {
-        
-        display: flex;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 25px;
-        padding: 25px 25px;
-        
-    }
-    section:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
+	}
+	.navigation li a {
+		font-size: 1.2rem;
+		text-align: center;
+  }
 
-    section div {
-        
-        margin: auto;
-    }
-    main img {
+  img[data-src] {
+    width: 100%;
+    height: auto;
+}
 
-    width: 50%;
-    }
+  img {
+    width: 100%;
+    height: auto;
+}
+.map {
+  display: flex;
+	width: 14rem;
+  height: auto;
+  padding: 1rem;
 }
