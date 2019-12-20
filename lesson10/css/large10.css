@@ -1,0 +1,22 @@
+@media only screen and (min-width: 60em) {
+          @media only screen and (min-width: 60em) {
+    
+                    .headings h1 {
+                        font-size: 3rem;
+                    }
+                    .headings .m {
+                                    font-size: 2rem;
+                          }
+                
+                    .contentbox {
+                        font-size: 1.1rem;
+                    }
+                    .contactimg {
+                        display: block;
+                        max-width: 22rem;
+                        height: auto;
+                        padding: .1rem 0rem .1rem .1rem;
+                        box-shadow: 5px 5px 5px black;
+                    }
+                    
+                    
