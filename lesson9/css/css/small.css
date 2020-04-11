@@ -27,8 +27,8 @@
           border: 3px solid black;
       }
       
-      header img{
-        width: 80px;
+    header img{
+        width: 140px;
         height: auto;
         border: 1px solid #000; 
         box-shadow: 5px 5px 5px black;
@@ -42,7 +42,7 @@
       }
 
 
-      h1 {
+      .h1 {
           font-size: 5px;
           color:#FFC308;
           font-family: sans-serif;
@@ -146,39 +146,141 @@
     left: -100%;
     top: -100%;
   }
-  
-  #toggle:checked ~ 
-  .nav {
-    margin-bottom: 100px;
-    pointer-events: auto;
-    transform: translate(50px, 50px);
-  }
-  #toggle:checked ~
-   .nav .nav-item {
-    color: red;
-    letter-spacing: 0;
-    height: 40px;
-    line-height: 40px;
-    margin-top: 0;
-    
-  }
+ 
   .article {
-    position: relative;
-    display: block;
-    max-width: 75rem;
-    margin: 10px auto;
+    max-width: 50rem;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax 250px, 1fr);
+    gap:3px;
+    font-family: 'Comic' 'sans-serif';
     border: 1px solid #000; 
     padding: 1rem;
 	  background-color: black;
 }
 
-article {
+.article section{
     width: 100%;
     height: auto;
-    position: relative;
-    box-shadow: 5px 5px 5px black;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    align-content: center;
+    background-color:#FFC308;
+    border: 2px black;
 }
-weathersummary {
+
+   
+.article img{
+  width: 240px;
+  height: auto;
+  border: 1px solid #000; 
+  box-shadow: 5px 5px 5px black;
+}
+
+.article p {
+  font-size: 1 rem;
+  font-family: 'Comic';
+  font-weight: bold;
+}
+
+div.towns {
+  background-color:#FFC308;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+div.town-data {
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+div.town-data section {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem;
+    padding: 4px;
+    background-color:#FFC308;
+    border: 2px black;
+  }
+
+  div.town-data section div.town-info {
+    margin: 2rem;
+  }
+
+  div.town-data section h3
+ {
+   font-size-adjust: 1rem;
+   text-align: center;
+   margin: 0;
+ }
+
+ div.town-section p {
+   font-size: 1rem;
+   text-align: center;
+   line-height: 2rem;
+   margin: 0;
+   padding: 4px; 
+ }
+
+ div.town-data section p.motto {
+  font-weight: bold;
+  font-style: italic;
+}
+
+div.town-data section div.town-image {
+  display: grid;
+}
+
+div.town-data section div.town-image img {
+  display: grid;
+  align-self: end;
+  width: 100%;
+}
+.pic-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 2rem;
+  margin: auto;
+}
+
+figure {
+  display: grid;
+  align-content: space-between;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+  display: grid;
+  width: 100%;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+figure figcaption {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  max-width: 270px;
+  font-size: 0.9rem;
+}
+
+
+/*weathersummary {
     position: absolute;
     margin: 0 auto;
     top: 3rem;
@@ -237,12 +339,14 @@ forecastdiv {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 articleimg {
     width: 50rem;
     height: auto;
     float: right;
     box-shadow: 5px 5px 5px black;
 }
+/*
 contentbox {
   display:flex;
   width: 1px;
@@ -264,7 +368,7 @@ contactimg {
   border: 1px solid #000; 
   box-shadow: 5px 5px 5px black;
       }
-
+*/
      
 address {
   width: 13rem;
@@ -296,7 +400,7 @@ map {
           text-align: center;
           box-shadow: 5px 5px 5px black;
       }
-      
+    /*  
      .main header {
         background-color:#992600;
         padding: 5px;
@@ -336,7 +440,7 @@ map {
           font-family: 'Raleway', sans-serif;
           font-size: 1.5rem;
         }
-             
+        */     
           footer {
             max-width: 100rem;
             margin: 0 auto;
