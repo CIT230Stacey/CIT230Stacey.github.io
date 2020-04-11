@@ -1,7 +1,7 @@
 /* medium media query */
 @media only screen and (min-width: 37.5em) {
 
-          header img {
+          .header img {
               margin: 5px 10px;
               float: left;
               display: block;
@@ -27,7 +27,7 @@
           nav ul { display: flex; }
           nav ul li { flex: 1 1 100%; }
       
-          main {
+          .main {
               font-size: 1rem;
           }
        
@@ -36,11 +36,11 @@
               
           }
       
-          main article {
+          .main article {
               padding: 0 25px;
           }
       
-          main img {
+          .main img {
               margin: 35px auto;
          
           }

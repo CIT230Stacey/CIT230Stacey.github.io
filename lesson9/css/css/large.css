@@ -1,12 +1,12 @@
 /* media query for large viewports */
 @media only screen and (min-width: 64em) {
 
-          header {
+          .header {
               border-radius: 15px 15px 0 0;
               margin: 15px auto;
           }
        
-          header img{
+          .header img{
               margin: 5px 10px;
               display: block;
               max-width: 128px;
@@ -28,7 +28,7 @@
               font-size: 1.75rem;
           }
       
-           footer {
+           .footer {
               border-radius: 0 0 15px 15px;
               line-height: 1.5em;
           }

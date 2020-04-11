@@ -1,5 +1,5 @@
 
-body {
+.body {
           font-family: 'sans-serif', 'raleway';
           font-size: 6px;
           max-width: 1100px;
@@ -28,7 +28,7 @@ body {
       }
       
       header img{
-        width: 120px;
+        width: 80px;
         height: auto;
         border: 1px solid #000; 
         box-shadow: 5px 5px 5px black;
@@ -63,9 +63,9 @@ body {
           min-height: 100%;
      }
      
-     .subhead {
+    .subhead {
          text-align: center;
-         font-family: 'Raleway', sans-serif;
+         font-family: 'comic', sans-serif;
          font-weight: bold;
          font-size: 2.5rem;
          text-align: center;
@@ -77,30 +77,30 @@ body {
          text-shadow: 3px 3px 5px black;
      }
      
-     h2 {
+     .h2 {
           font-size: 1.25rem;
           color:#FFC308;
-          font-family: sans-serif;
+          font-family: 'comic',sans-serif;
           font-weight: bold;
           text-align: center;
           line-height: .75;
           text-shadow: 5px 5px 5px black;
         }
       
-      h3 {
+      .h3 {
           font-size: 1.1rem;
           color: black;
-          font-family: sans-serif;
+          font-family: 'comic', 'sans-serif';
           font-weight: bold;
           text-align: center;
           line-height: .75;
           text-shadow: 5px 5px 5px black;
           }
           
-      h4 {
+      .h4 {
         font-size: 10rem;
         color: black;
-        font-family: sans-serif;
+        font-family: 'comic', 'sans-serif';
         font-weight: bold;
         text-align: center;
         line-height: .75;
@@ -147,12 +147,14 @@ body {
     top: -100%;
   }
   
-  #toggle:checked ~ .nav {
+  #toggle:checked ~ 
+  .nav {
     margin-bottom: 100px;
     pointer-events: auto;
     transform: translate(50px, 50px);
   }
-  #toggle:checked ~ .nav .nav-item {
+  #toggle:checked ~
+   .nav .nav-item {
     color: red;
     letter-spacing: 0;
     height: 40px;
@@ -160,7 +162,7 @@ body {
     margin-top: 0;
     
   }
-  .herodiv {
+  .article {
     position: relative;
     display: block;
     max-width: 75rem;
@@ -170,13 +172,13 @@ body {
 	  background-color: black;
 }
 
-.hero-ph {
+article {
     width: 100%;
     height: auto;
     position: relative;
     box-shadow: 5px 5px 5px black;
 }
-.weathersummary {
+weathersummary {
     position: absolute;
     margin: 0 auto;
     top: 3rem;
@@ -186,10 +188,10 @@ body {
     background-color:#81BEF7;
     padding: 1rem;
     box-shadow: 5px 5px 5px black;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Comic', 'sans-serif';
     font-weight: bold;
 }
-.weathertitle {
+weathertitle {
     font-size: 1.25rem;
     color:black;
     font-family: sans-serif;
@@ -197,14 +199,14 @@ body {
     text-align: center;
          }
 
-.weatherinfo {
+weatherinfo {
     display: inline-grid;
     grid-template-columns: auto auto;
     column-gap: .5rem;
     padding: .5rem .5rem .5rem .5rem;
     font-size: 1.25rem;
     color: black;
-    font-family: sans-serif;
+    font-family: 'comic', 'sans-serif';
     font-weight: bold;
     text-align: center;
                }
@@ -218,7 +220,7 @@ body {
     color:  black;
 }
 
-.forecastdiv {
+forecastdiv {
     display: none;
 }
 
@@ -229,20 +231,19 @@ body {
     border: 1px solid #000; 
     padding: 1rem;
     background-color:black;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Comic', 'sans-serif';
     line-height: 1.8rem;
     color:#FFC308;
     font-size: 1.5rem;
     font-weight: bold;
 }
-.articleimg {
+articleimg {
     width: 50rem;
     height: auto;
     float: right;
     box-shadow: 5px 5px 5px black;
 }
-
-.contentbox {
+contentbox {
   display:flex;
   width: 1px;
   height: auto;
@@ -257,7 +258,7 @@ body {
 }
 
 
-.contactimg {
+contactimg {
   width: 5px;
   height: auto;
   border: 1px solid #000; 
@@ -269,7 +270,7 @@ address {
   width: 13rem;
   height: auto;
   justify-content: left;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Comic', 'sans-serif';
   color: black;
   font-size: 1rem;
   font-weight: bold;
@@ -277,17 +278,16 @@ address {
   padding: 1rem .5rem 0rem 2rem;
 }
 
-.pin {
+pin {
   width: 3rem;
   height: auto;
   background-color: black;
 }
 
-.map {
+map {
   display: block;
 }
-
-      main {
+ main {
           background-color:#992600;
           border:5px solid black;
           padding: 5px;
@@ -297,7 +297,7 @@ address {
           box-shadow: 5px 5px 5px black;
       }
       
-      main header {
+     .main header {
         background-color:#992600;
         padding: 5px;
         line-height: 1.75; 
@@ -305,7 +305,7 @@ address {
         box-shadow: 2px 2px 5px #FFC308;
           
       }
-      main article {
+      .main article {
         position: relative;
         margin: 10px auto;
         top: 3rem;
@@ -315,11 +315,11 @@ address {
         background-color:#81BEF7;
         padding: 1rem;
         box-shadow: 5px 5px 5px black;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Comic', 'sans-serif';
         font-weight: bold;
     }
 
-      main img {
+      .main img {
         float: right;
          width: 28.5%;
          height:auto;
@@ -348,7 +348,7 @@ address {
             background-color: #659DBD; 
             text-align: center;
             line-height: 1.2rem;
-            font-family: "sans-serif";
+            font-family: 'Comic', 'sans-serif';
             font-size: 1.5rem;
             text-shadow: 1px 1px 1px #FFC308;
           }
