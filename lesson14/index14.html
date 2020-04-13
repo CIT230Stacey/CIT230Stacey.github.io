@@ -5,41 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Inn & Suites & Temple Square">
-    <title>Home | Inn & Suites &amp; Temple Square </title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/laptop-screen.css">
-    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap" rel="stylesheet">
+    <title>Home | Inn & Suites &amp; Newport Suites </title>
+    <link href="css/14css.css"rel="stylesheet">
+   
+    
 </head>
-<body id="home">
+<body>
     <header>
-        <div class="logo-container">
-            <img src="images/newporttemple.jpg" alt="Temple Inn and Suites" class="Life in Newport">
-            <h2>Home | Inn  Suites @ Temple Square</h2>
+        <div class="hero-image">
+              <section class="logo"></section>
+            <h1>The Inn at Newport Square is on the Beach</h1>  
+            <img src="images/coronadelmar.jpg" alt="life in newport">
         </div>
+    
         <nav>
-            <ul id="navigation" class="hide">
-                <li><a href="#home">Home</a></li>
-                <li><a href="index.html#about-us">About Us</a></li>
-                <li><a href="temples.html">Temples</a></li>
-                <li><a href="services.html">Services &amp; Amenities</a></li>
-                <li><a href="reserve.html">Reserve</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">☰ Menu</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-        </nav>
-    </header>
+            </nav>
+   
+        </header>
+        <div id="banner">
+        <div id="motto"></div>
+
+            </div>
+        </div>
+
+    <section class="hero">
+        <h1>Experience Life in Newport</h1>  
+        <img src="images/newporttemple.jpg" alt="Temple Inn and Suites" class="Life in Newport">
+        <div class= "hero-banner"> 
+        <div class="hero-title"> 
+            <div class="call-to-action"><a href="reservations.html">Make a Reservation</a></div>
+    </section>
+          
+      
+            <h2>Home | Inn  Suites Newport Square</h2>  
+       
+            <a href="button" class="btn">Are you Ready?</a>
+         
+            <p>Can you image the view of the Pacific Ocean?</p>
+    </div>
+    </section>
 
     <main>
+        <div class="temple">
+      <div class="centered"> </div>
         <section class="welcome">
-            <img src="images/newport_beach_california_temple.jpeg" class="Newport Temple">
+            <img src="images/californianewporttemple.jpeg" class="Newport Temple">
             <div class="welcome-info">
                 <h1 class="welcome-h1">Welcome To the Inn &amp; Suites at Temple<br>Square</h1>
-                <button>Make A Reservation</button>
-                <button>Contact Us</button>
+                <div id=reserv> <a href="reservation.html" id="res">Book Now ></a></div>
+                <div id=reserv> <a href="button" id="Make A Reservation"></a></button>
+                <div id=reserv> <a href="button" id="Book Now"></a></div><button>Contact Us</button>
+              
                 <!-- <a href="">Make A Reservation</a>
                 <a href="">Contact Us</a> -->
             </div>
+        </div>
         </section>
 
         <section id="about-us" class="about-us">
@@ -49,8 +77,20 @@
                     Life in Newport is worth the wait.  Bring your family and enjoy the view, the ocean and our family friendly property.  We have family suites, rv parking, shuttles to the beach, swimming pools, buffet breakfast...
                 </p>
           </div>
-            <img src="images/newporttemple.jpg" alt="Our View">
+    
         </section>
+        <div class="row">
+            <div class="column">
+                <img src="images/newporttemple.jpg" lt="temple">
+            </div>
+            <div class="column">
+              <img src="images/treasureisland.jpg" alt="newport">
+            </div>
+            <div class="column">
+              <img src="images/newporttemple2.jpg" alt="temple">
+            </div>
+          </div>
+        </div>
 
         <section class="hotel-features">
             <div class="temples center-features">
@@ -107,7 +147,7 @@
     <footer>
         <p>Stacey Atwood | &copy; 2019 BYUi | Final</p>
     </footer>
-
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>
 </html>

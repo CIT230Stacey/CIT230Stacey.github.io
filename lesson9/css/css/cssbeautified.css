@@ -1,0 +1,357 @@
+
+.body {
+          font-family: 'comic';
+          background-color: #81BEF7;
+          font-size: 6px;
+          max-width: 1000px;
+          margin: 0 auto;
+          text-align: center;
+          line-height: 1.5;
+      }
+      .showbanner {
+        display:inside;
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 1.25em;
+        background-color:#FFC308;
+        padding: 1rem;
+      }
+      
+       header {
+          background-color: #81BEF7;
+          padding: 40px;
+          display:flex;
+          text-align: center;
+          font-size:3rem;
+          align-items: center;
+          justify-content: center;
+          border: 3px solid black;
+      }
+      
+      header img{
+        width: 140px;
+        height: auto;
+        border: 1px solid #000; 
+        box-shadow: 5px 5px 5px black;
+      }
+      
+      .headings{
+         display: flex;
+         flex-direction: column;
+         margin:auto;
+         padding-left: 2rem;
+      }
+
+
+      h1 {
+          font-size: 5px;
+          color:#FFC308;
+          font-family:'comic';
+          text-align: center;
+          text-shadow: 5px 5px 5px #000;
+      }
+
+      .motto {
+        font-size: 2rem;
+        color:#000;
+        font-family: 'comic';
+        font-weight: bold;
+        text-align: center;
+        line-height: .50px;
+         }
+
+         #content {
+          min-height: 100%;
+     }
+     
+     .subhead {
+         text-align: center;
+         font-family: 'comic';
+         font-weight: bold;
+         font-size: 5rem;
+         background-color:#FFC308;
+         border-top: 2px solid #000; 
+         border-bottom: 2px solid #000; 
+         padding: 5rem;
+         color: #FFF;
+         text-shadow: 3px 3px 5px #000;
+     }
+     
+     .h2 {
+          font-size: 1.25rem;
+          color:#FFC308;
+          font-family: 'comic';
+          font-weight: bold;
+          text-align: center;
+          line-height: .75;
+          text-shadow: 3px 3px 5px #000;
+        }
+      
+     .h3 {
+          font-size: 1.25rem;
+          color: black;
+          font-family: 'comic';
+          font-weight: bold;
+          text-align: center;
+          line-height: .75;
+          text-shadow: 3px 3px 5px #000;
+          }
+          
+      .h4 {
+        font-size: 1.25rem;
+        color: #000;
+        font-family: 'comic';
+        font-weight: bold;
+        text-align: center;
+        line-height: .75;
+        text-shadow: 3px 3px 5px #000;
+        }
+      
+      nav {
+          background-color:#FFC308;
+          text-align: center;
+          box-shadow: 2px 2px 2px #000;
+          border: 3px solid #000;
+      }
+      
+      nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+      
+      nav ul a {
+          display: block;
+          color:white;
+          text-align: center;
+          padding: .75rem;
+          text-decoration: none;
+          font-size: 2rem;
+          font-weight: bold;
+      }
+      
+      nav a:hover {
+          background-color:#992600;
+          color:#4978a3;
+      }
+      
+      .active {
+          background-color:#000;
+          color:#FFF;
+      }
+/*    
+  #toggle {
+    position: absolute;
+    left: -100%;
+    top: -100%;
+  }
+  
+  #toggle:checked ~ .nav {
+    margin-bottom: 100px;
+    pointer-events: auto;
+    transform: translate(50px, 50px);
+  }
+  #toggle:checked ~ .nav .nav-item {
+    color: red;
+    letter-spacing: 0;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0;
+    
+  }
+  .herodiv {
+    position: relative;
+    display: inside;
+    max-width: 1000px;
+    margin: 2px auto;
+    border: 5px solid #000; 
+    padding: 1rem;
+    background-color:#000;
+}
+
+.hero-ph {
+    width: 50%;
+    height: auto;
+    position: relative;
+    box-shadow: 5px 5px 5px #000;
+}
+*/
+.weathersummary {
+    object-position: 50% 50%;
+    margin: 25%;
+    height: auto;
+    background-color:#992600;
+    padding: 2rem;
+    box-shadow: 5px 5px 5px#000;
+    font-family: 'comic';
+    font-weight: bold;
+    color: #000;
+}
+/*
+.weathertitle {
+    font-size: 1.25rem;
+    color:black;
+    font-family: 'comic';
+    font-weight: bold;
+    text-align: center;
+         }
+
+.weatherinfo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: .5rem;
+    padding: .5rem .5rem .5rem .5rem;
+    font-size: 1.25rem;
+    color: #000;
+    font-family: 'comic';
+    font-weight: bold;
+    text-align: center;
+               }
+*/
+.c1 {
+	text-align: center;
+    color:#FFF;
+  }
+.c2 {
+	text-align: left;
+    color:  #000;
+}
+
+.forecastdiv {
+    display: none;
+}
+
+.article {
+    display: display-inside;
+    max-width:1100px;
+    margin: 10px auto;
+    border: 1px solid #000; 
+    padding: 1rem;
+    background-color:#000;
+    font-family: 'comic';
+    line-height: 1rem;
+    color:#FFC308;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.articleimg {
+   width: 50%;
+    height: auto;
+    float: cemter;
+    box-shadow: 5px 5px 5px#000;
+}
+/*
+.contentbox {
+  display:flex;
+  width: 1px;
+  height: auto;
+  margin: auto;
+  text-align: right;
+  border: 5px solid #000;
+  background-color:#FFC308;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5rem;
+  margin-top: .5rem;
+}
+
+
+.contactimg {
+  width: 5px;
+  height: auto;
+  border: 1px solid #000; 
+  box-shadow: 5px 5px 5px#000;
+      }
+
+     
+.address {
+  width: 13rem;
+  height: auto;
+  justify-content: center;
+  font-family: 'comic';
+  color:#000;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 3rem;
+  padding: 1rem .5rem 0rem 2rem;
+}
+
+.pin {
+  width: 3rem;
+  height: auto;
+  background-color: #000;
+}
+
+.map {
+  display: block;
+}
+*/
+      main {
+          background-color:#992600;
+          border:5px solid #000;
+          padding: 5px;
+          width: auto;
+          font-size: 2rem;
+          text-align: center;
+          box-shadow: 5px 5px 5px#000;;
+      }
+/*   
+      main header {
+        background-color:#992600;
+        padding: 5px;
+        margin: auto;
+        text-align: center;
+        box-shadow: 2px 2px 5px #FFC308;
+          
+      }
+      main article {
+        top: 3rem;
+        margin: auto;
+        background-color:#81BEF7;
+        padding: 5px;
+        box-shadow: 5px 5px 5px#000;
+        font-family: 'comic';
+        font-weight: bold;
+    }
+
+      main img {
+        float:none;
+         width: 28.5%;
+         height:auto;
+        box-shadow: 5px 5px 5px#000;
+         }
+*/          
+        
+        #info {
+          border: 1px solid #000; 
+          padding: 1rem;
+          background-color: #659DBD; 
+          text-align: center;
+          line-height: 1.2rem;
+          font-family: 'comic';
+          font-size: 1.5rem;
+        }
+             
+          footer {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            border: 10px solid #000; 
+            padding: 4rem;
+            background-color: #659DBD; 
+            text-align: center;
+            font-family: 'comic';
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 1px #FFC308;
+          }
+
+        
+          .link {
+            background-color:#992600;
+          }
+        
+        .date {
+            color: '#FFF';
+        }
+

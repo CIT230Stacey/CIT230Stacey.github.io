@@ -1,35 +1,33 @@
+
 body {
           font-family: 'comic';
           font-size: 6px;
           max-width: 1100px;
           margin: 0 auto;
           text-align: center;
-          line-height: 1.5rem;
+          line-height: 1.5;
       }
-     
       .showbanner {
         display: block;
         text-align: center;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
+        font-size: 1.25em;
+        line-height: 1.25em;
         background-color:#FFC308;
         padding: 0.9rem;
       }
       
-       .header {
+       header {
           background-color: #81BEF7;
           padding: 40px;
           display:flex;
           text-align: center;
           font-size:3px;
-          font-family:'comic';
           align-items: center;
           justify-content: center;
-          flex-flow: row;
           border: 3px solid black;
       }
       
-      .header img{
+      header img{
         width: 120px;
         height: auto;
         border: 1px solid #000; 
@@ -43,85 +41,87 @@ body {
          padding-left: 2rem;
       }
 
-      .h1 {
-          font-size: 5rem;
-          color:#FFC308; 
-          font-weight: bold;
+
+      h1 {
+          font-size: 5px;
+          color:#FFC308;
+          font-family:'comic';
           text-align: center;
-          line-height: 1rem;
-          font-family: 'comic';
-          text-align: center;
-          text-shadow: 7px 7px 7px black;
-          }
+          text-shadow: 5px 5px 5px #000;
+      }
 
       .motto {
         font-size: 1rem;
-        color: black;
+        color:#000;
         font-family: 'comic';
         font-weight: bold;
         text-align: center;
-        line-height: .50;
+        line-height: .50px;
          }
 
+         #content {
+          min-height: 100%;
+     }
+     
      .subhead {
          text-align: center;
          font-family: 'comic';
          font-weight: bold;
-         font-size: 4rem;
+         font-size: 2.5rem;
          text-align: center;
          background:#FFC308;
          border-top: 4px solid #000; 
          border-bottom: 4px solid #000; 
          padding: .4rem;
-         color: white;
-         text-shadow: 3px 3px 5px black;
+         color: #FFF;
+         text-shadow: 3px 3px 5px #000;
      }
      
      h2 {
-          font-size: 2rem;
+          font-size: 1.25rem;
           color:#FFC308;
-          font-family: 'sans-serif';
+          font-family: 'comic';
           font-weight: bold;
           text-align: center;
           line-height: .75;
-          text-shadow: 5px 5px 5px black;
+          text-shadow: 5px 5px 5px#000;
         }
       
       h3 {
-          font-size: 1.25rem;
+          font-size: 1.1rem;
           color: black;
           font-family: 'comic';
           font-weight: bold;
           text-align: center;
           line-height: .75;
-          text-shadow: 5px 5px 5px black;
+          text-shadow: 5px 5px 5px#000;
           }
           
       h4 {
-        font-size: 1.25rem;
-        color: black;
+        font-size: 10rem;
+        color: #000
         font-family: 'comic';
         font-weight: bold;
         text-align: center;
         line-height: .75;
-        text-shadow: 5px 5px 5px black;
+        text-shadow: 5px 5px 5px #000
         }
-    /** Navigation  **/  
-        nav {
+      
+      nav {
           background-color:#FFC308;
           text-align: center;
-          box-shadow: 2px 2px 15px white;
-          border: 3px solid black;
+          box-shadow: 0 2px 15px #FFF;
+          border: 3px solid #000;
       }
       
-      .nav ul {
+      nav ul {
           list-style: none;
           margin: 0;
           padding: 0;
           overflow: hidden;
       }
       
-      .nav ul a {
+      nav ul a {
           display: block;
           color:white;
           text-align: center;
@@ -131,17 +131,16 @@ body {
           font-weight: bold;
       }
       
-      .nav a:hover {
+      nav a:hover {
           background-color:#992600;
           color:#4978a3;
       }
       
       .active {
-          background-color: black;
-          color: white;
+          background-color:#000;
+          color:#FFF;
       }
-
-    
+      
   #toggle {
     position: absolute;
     left: -100%;
@@ -161,161 +160,67 @@ body {
     margin-top: 0;
     
   }
-  
-.responsive li {
-	display: block;
+  .herodiv {
+    position: relative;
+    display: block;
+    max-width: 35rem;
+    margin: 2px auto;
+    border: 1px solid #000; 
+    padding: 1rem;
+    background-color:#000;
 }
 
-    /**  Town Weather **/
-    
-.figure figcaption{
-    text-align: center;
-    font-weight: 10px;
-    margin-bottom: 2px;
-    font-size: 12px;
+.hero-ph {
+    width: 50%;
+    height: auto;
+    position: relative;
+    box-shadow: 5px 5px 5px #000;
+}
+.weathersummary {
+    position: absolute;
+    margin: 0 auto;
+    top: 3rem;
+    left: 2rem;
+    width: 20rem;
+    height: auto;
+    background-color:#81BEF7;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px#000;
     font-family: 'comic';
-}   
-
-.figure {
-	width: 200px;
-	padding: 4px;
-	border: 4px dotted #AAA;
-	background-color: #EEE;
-	display: block;
+    font-weight: bold;
 }
+.weathertitle {
+    font-size: 1.25rem;
+    color:black;
+    font-family: 'comic';
+    font-weight: bold;
+    text-align: center;
+         }
 
-.figure article, figure main {
-	margin-top: 5px;
-	font-style: italic;
-	font-family: 'comic';
-}
+.weatherinfo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: .5rem;
+    padding: .5rem .5rem .5rem .5rem;
+    font-size: 1.25rem;
+    color: #000;
+    font-family: 'comic';
+    font-weight: bold;
+    text-align: center;
+               }
 
-.figure img {
-	width: 300px;
-	box-shadow: 5px, 5px, 5px, black;
-         
-	.transition: 0.5s;
-}
-
-.figure img:hover {
-	transition: 0.5s;
-	width: 310px;
-}
-
-.town-data{
-max-width: 60rem;
-margin: 10px auto;
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-gap: 5px;
-background-color: #BC986A;
-font-family: 'comic';
-padding: 1rem;
-border: 1px solid #000; 
+.c1 {
+	text-align: right;
+    color:brown;
+  }
+.c2 {
+	text-align: left;
+    color:  #000;
 }
 
-div.town-data {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  align-content: center;
+.forecastdiv {
+    display: none;
 }
-
-div.town-data section {
-  display: grid;
-  grid-template-rows: auto;
-  justify-content: space-between;
-  width: 97%;
-  margin: 0.5rem 0;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.4);
-}
-div.town-data section div.town-info {
-  margin: 1rem;
-}
-
-/*height: auto;
-justify-content: center;
-text-align: center;
-padding: 5px;
-padding-bottom: 1rem;
-align-content: center;
-background-color: rgb(244, 3, 167);
-border: 1px solid black;
-}
-*/
-.townsites h2 {
-font-size: 2rem;
-}
-
-h3 {
-font-size: 16px;
-height: 32px;
-font-style: italic;
-}
-
-.townsites p {
-font-size: 1rem;
-font-weight: bold;
-}
-
-.p3 {
-padding-bottom: 16px;
-}
-
-.townsites img {
-height: 20rem;
-width: auto;
-box-shadow: 0 0 20px black;
-}
-
-main {
-  background-color:#992600;
-  border:5px solid black;
-  padding: 5px;
-  margin: 10px auto;
-  font-size: 2rem;
-  text-align: center;
-  box-shadow: 5px 5px 5px black;
-}
-
-main header {
-background-color:#992600;
-padding: 5px;
-line-height: 1.75; 
-text-align: center;
-box-shadow: 2px 2px 5px #FFC308;
-  
-}
-main article {
-position: right;
-margin: 10px auto;
-top: 3rem;
-left: auto;
-width: 20rem;
-height: auto;
-background-color:#81BEF7;
-padding: 1rem;
-box-shadow: 5px 5px 5px black;
-font-family: 'comic';
-font-weight: bold;
-}
-
-main img {
-float: right;
- width: 28.5%;
- height:auto;
-box-shadow: 5px 5px 5px black;
- }
-section img {
-    height: 17rem;
-    width: 24rem;
-    /*position: relative;*/
-    left: auto;
-    right: 30%;
-}
-
 
 .article {
     display: block;
@@ -323,7 +228,7 @@ section img {
     margin: 10px auto;
     border: 1px solid #000; 
     padding: 1rem;
-    background-color:black;
+    background-color:#000;
     font-family: 'comic';
     line-height: 1.8rem;
     color:#FFC308;
@@ -334,16 +239,16 @@ section img {
     width: 50rem;
     height: auto;
     float: right;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px#000;
 }
-*/
+
 .contentbox {
   display:flex;
   width: 1px;
   height: auto;
   margin: auto;
   text-align: right;
-  border: 5px solid black;
+  border: 5px solid #000;
   background-color:#FFC308;
   font-size: 1rem;
   font-weight: bold;
@@ -356,16 +261,16 @@ section img {
   width: 5px;
   height: auto;
   border: 1px solid #000; 
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px#000;
       }
 
      
-.address {
+address {
   width: 13rem;
   height: auto;
-  justify-content: right;
+  justify-content: left;
   font-family: 'comic';
-  color: black;
+  color:#000;
   font-size: 1rem;
   font-weight: bold;
   margin-left: 3rem;
@@ -375,13 +280,63 @@ section img {
 .pin {
   width: 3rem;
   height: auto;
-  background-color: black;
+  background-color: #000;
 }
 
 .map {
   display: block;
 }
 
+      main {
+          background-color:#992600;
+          border:5px solid #000;
+          padding: 5px;
+          margin: 10px auto;
+          font-size: 2rem;
+          text-align: center;
+          box-shadow: 5px 5px 5px#000;;
+      }
+      
+      main header {
+        background-color:#992600;
+        padding: 5px;
+        line-height: 1.75; 
+        text-align: center;
+        box-shadow: 2px 2px 5px #FFC308;
+          
+      }
+      main article {
+        position: relative;
+        margin: 10px auto;
+        top: 3rem;
+        left: 2rem;
+        width: 20rem;
+        height: auto;
+        background-color:#81BEF7;
+        padding: 1rem;
+        box-shadow: 5px 5px 5px#000;
+        font-family: 'comic';
+        font-weight: bold;
+    }
+
+      main img {
+        float: right;
+         width: 28.5%;
+         height:auto;
+        box-shadow: 5px 5px 5px#000;
+         }
+          
+        
+        #info {
+          border: 1px solid #000; 
+          padding: 1rem;
+          background-color: #659DBD; 
+          text-align: center;
+          line-height: 1.2rem;
+          font-family: 'comic';
+          font-size: 1.5rem;
+        }
+             
           footer {
             max-width: 100rem;
             margin: 0 auto;
@@ -404,6 +359,6 @@ section img {
           }
         
         .date {
-            color: white;
+            color: '#FFF';
         }
 

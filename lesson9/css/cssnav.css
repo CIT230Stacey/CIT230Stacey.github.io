@@ -1,0 +1,468 @@
+
+body {
+          font-family: 'comic';
+          font-size: 6px;
+          max-width: 1100px;
+          margin: 0 auto;
+          text-align: center;
+          line-height: 1.5;
+      }
+      .showbanner {
+        display: block;
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 1.25em;
+        background-color:#FFC308;
+        padding: 0.9rem;
+      }
+      
+       .header {
+          background-color: #81BEF7;
+          padding: 40px;
+          display:flex;
+          text-align: center;
+          font-size:3px;
+          font-family:'comic';
+          align-items: center;
+          justify-content: center;
+          border: 3px solid black;
+      }
+      
+    .header img{
+        width: 140px;
+        height: auto;
+        border: 1px solid #000; 
+        box-shadow: 5px 5px 5px black;
+      }
+      
+      .headings{
+         display: flex;
+         flex-direction: column;
+         margin: 0 0 0 17px;
+         padding-left: 2rem;
+      }
+
+
+      .h1 {
+          font-size: 5px;
+          color:#FFC308;
+          font-family: sans-serif;
+          text-align: center;
+          text-shadow: 5px 5px 5px black;
+      }
+
+      .motto {
+        font-size: 1rem;
+        color: black;
+        font-family: "arial narrow"; 
+        font-weight: bold;
+        text-align: center;
+        line-height: .50px;
+         }
+
+         #content {
+          min-height: 100%;
+     }
+     
+    .subhead {
+         text-align: center;
+         font-family: 'comic', sans-serif;
+         font-weight: bold;
+         font-size: 2.5rem;
+         background:#FFC308;
+         border-top: 4px solid #000; 
+         border-bottom: 4px solid #000; 
+         padding: .4rem;
+         color: white;
+         text-shadow: 3px 3px 5px black;
+     }
+     
+     .h2 {
+          font-size: 2.5rem;
+          color:#FFC308;
+          font-family: 'comic',sans-serif;
+          font-weight: bold;
+          text-align: center;
+          line-height: .75px;
+          text-shadow: 5px 5px 5px black;
+        }
+      
+      .h3 {
+          font-size: 10rem;
+          color: black;
+          font-family: 'comic', 'sans-serif';
+          font-weight: bold;
+          text-align: right;
+          line-height: .75px;
+          text-shadow: 5px 5px 5px black;
+          }
+          
+      .h4 {
+        font-size: 10rem;
+        color: black;
+        font-family: 'comic', 'sans-serif';
+        font-weight: bold;
+        text-align: right;
+        line-height: .75;
+        text-shadow: 5px 5px 5px black;
+        }
+      
+      .nav {
+          background-color:#FFC308;
+          text-align: center;
+          box-shadow: 2px 2px 15px white;
+          border: 3px solid black;
+      }
+      
+      .nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+      
+      .nav ul a {
+          display: block;
+          color:white;
+          text-align: center;
+          padding: .75rem;
+          text-decoration: none;
+          font-size: .95rem;
+          font-weight: bold;
+      }
+      
+      .nav a:hover {
+          background-color:#992600;
+          color:#4978a3;
+      }
+      
+      .active {
+          background-color: black;
+          color: white;
+      }
+      
+  #toggle {
+    position: absolute;
+    left: -100%;
+    top: -100%;
+  }
+ 
+  .article {
+    max-width: 5rem;
+    margin: 15px auto;
+    display: display-box;
+    flex-direction: column;
+    gap:3px;
+    font-family: 'Comic' 'sans-serif';
+    border: 1px solid #000; 
+    padding: 1rem;
+	  background-color: black;
+}
+
+.article section{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    align-content: center;
+    background-color:#FFC308;
+    border: 2px black;
+}
+
+   
+.article img{
+  width: 240px;
+  height: auto;
+  border: 1px solid #000; 
+  box-shadow: 5px 5px 5px black;
+}
+
+.article p {
+  font-size: 1 rem;
+  font-family: 'Comic';
+  font-weight: bold;
+}
+
+div.towns {
+  background-color:#FFC308;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+div.town-data {
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+div.town-data section {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem;
+    padding: 4px;
+    background-color:#FFC308;
+    border: 2px black;
+  }
+
+  div.town-data section div.town-info {
+    margin: 2rem;
+  }
+
+  div.town-data section h3
+ {
+   font-size-adjust: 1rem;
+   text-align: center;
+   margin: auto;
+ }
+
+ div.town-section p {
+   font-size: 1rem;
+   text-align: center;
+   line-height: 2rem;
+   margin: 100%;
+   padding: 4px; 
+ }
+
+ div.town-data section p.motto {
+  font-weight: bold;
+  font-style: italic;
+}
+
+div.town-data section div.town-image {
+  display: grid;
+}
+
+div.town-data section div.town-image img {
+  display: grid;
+  align-self: auto;
+  width: 100%;
+}
+.pic-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 2rem;
+  margin: auto;
+}
+*/
+.figure style{
+  display: display-box;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: right;
+  margin: 2rem;
+  padding: 5rem;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px #992600;
+}
+
+.figure img {
+  display: display-inside;
+  width: 100%;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+.figcaption {
+  display:display-inside;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  max-width: 270px;
+  font-size: 12pt;
+}
+
+
+/*weathersummary {
+    position: absolute;
+    margin: 0 auto;
+    top: 3rem;
+    left: 2rem;
+    width: 20rem;
+    height: auto;
+    background-color:#81BEF7;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Comic', 'sans-serif';
+    font-weight: bold;
+}
+weathertitle {
+    font-size: 1.25rem;
+    color:black;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+         }
+
+weatherinfo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: .5rem;
+    padding: .5rem .5rem .5rem .5rem;
+    font-size: 1.25rem;
+    color: black;
+    font-family: 'comic', 'sans-serif';
+    font-weight: bold;
+    text-align: center;
+               }
+
+.c1 {
+	text-align: right;
+    color:brown;
+  }
+.c2 {
+	text-align: left;
+    color:  black;
+}
+
+forecastdiv {
+    display: none;
+}
+
+.article {
+    display: block;
+    max-width: 60rem;
+    margin: 10px auto;
+    border: 1px solid #000; 
+    padding: 1rem;
+    background-color:black;
+    font-family: 'Comic', 'sans-serif';
+    line-height: 1.8rem;
+    color:#FFC308;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+articleimg {
+    width: 50rem;
+    height: auto;
+    float: right;
+    box-shadow: 5px 5px 5px black;
+}
+/*
+contentbox {
+  display:flex;
+  width: 1px;
+  height: auto;
+  margin: auto;
+  text-align: right;
+  border: 5px solid black;
+  background-color:#FFC308;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5rem;
+  margin-top: .5rem;
+}
+
+
+contactimg {
+  width: 5px;
+  height: auto;
+  border: 1px solid #000; 
+  box-shadow: 5px 5px 5px black;
+      }
+*/
+     
+address {
+  width: 13rem;
+  height: auto;
+  justify-content: center;
+  font-family: 'Comic', 'sans-serif';
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 3rem;
+  padding: 1rem .5rem 0rem 2rem;
+}
+
+pin {
+  width: 3rem;
+  height: auto;
+  background-color: black;
+}
+
+map {
+  display: block;
+}
+ main {
+          background-color:#992600;
+          border:5px solid black;
+          padding: 5px;
+          margin: 10px auto;
+          font-size: 2rem;
+          text-align: center;
+          box-shadow: 5px 5px 5px black;
+      }
+    /*  
+     .main header {
+        background-color:#992600;
+        padding: 5px;
+        line-height: 1.75; 
+        text-align: center;
+        box-shadow: 2px 2px 5px #FFC308;
+          
+      }
+      .main article {
+        position: relative;
+        margin: 10px auto;
+        top: 3rem;
+        left: 2rem;
+        width: 20rem;
+        height: auto;
+        background-color:#81BEF7;
+        padding: 1rem;
+        box-shadow: 5px 5px 5px black;
+        font-family: 'Comic', 'sans-serif';
+        font-weight: bold;
+    }
+
+      .main img {
+        float: right;
+         width: 28.5%;
+         height:auto;
+        box-shadow: 5px 5px 5px black;
+         }
+          
+        
+        #info {
+          border: 1px solid #000; 
+          padding: 1rem;
+          background-color: #659DBD; 
+          text-align: center;
+          line-height: 1.2rem;
+          font-family: 'Raleway', sans-serif;
+          font-size: 1.5rem;
+        }
+        */     
+          footer {
+            max-width: 100rem;
+            margin: 0 auto;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            border: 10px solid #000; 
+            padding: 4rem;
+            background-color: #659DBD; 
+            text-align: center;
+            line-height: 1.2rem;
+            font-family: 'Comic', 'sans-serif';
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 1px #FFC308;
+          }
+
+        
+          .link {
+            background-color:#992600;
+          }
+        
+        .date {
+            color: white;
+        }
+
