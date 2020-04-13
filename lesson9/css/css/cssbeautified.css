@@ -9,7 +9,7 @@
           line-height: 1.5;
       }
       .showbanner {
-        display:inside;
+        display:none;
         text-align: center;
         font-size: 1.25em;
         line-height: 1.25em;
@@ -223,7 +223,7 @@
 }
 
 .article {
-    display: display-inside;
+    display:none;
     max-width:1100px;
     margin: 10px auto;
     border: 1px solid #000; 
@@ -238,7 +238,7 @@
 .articleimg {
    width: 50%;
     height: auto;
-    float: cemter;
+    float: center;
     box-shadow: 5px 5px 5px#000;
 }
 /*
