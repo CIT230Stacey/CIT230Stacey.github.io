@@ -343,15 +343,18 @@
             text-align: center;
             font-family: 'comic';
             font-size: 1.5rem;
-            text-shadow: 1px 1px 1px #FFC308;
-          }
+            }
 
         
           .link {
             background-color:#992600;
           }
         
+      
         .date {
-            color: '#FFF';
+            background-color:#FFC308;
+            justify-content: center;
+            text-align: center;
+            font-family: 'comic';
         }
 

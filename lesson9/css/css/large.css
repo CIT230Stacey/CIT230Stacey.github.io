@@ -31,6 +31,8 @@
            .footer {
               border-radius: 0 0 15px 15px;
               line-height: 1.5em;
+              margin: 15px auto;
+          }
           }
       
       }
